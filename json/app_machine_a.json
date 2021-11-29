@@ -1,0 +1,6 @@
+---
+---
+[
+{% for i in (1..40) %}{ "url": "{{site.url}}{{site.baseurl}}/img/machine-a/machine-a-{{i}}.webp" }{% if forloop.last == false %},{% endif %}
+{% endfor %}
+]
