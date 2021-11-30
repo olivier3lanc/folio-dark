@@ -2,5 +2,5 @@
 ---
 [
 {% for i in (1..74) %}{ "url": "{{site.url}}{{site.baseurl}}/img/newspaper-mikkel/newspaper-mikkel-{{i}}.webp" }{% if forloop.last == false %},{% endif %}
-{% endfor %}s
+{% endfor %}
 ]

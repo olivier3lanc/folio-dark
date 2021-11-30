@@ -1,0 +1,6 @@
+---
+---
+[
+{% for i in (1..56) %}{ "url": "{{site.url}}{{site.baseurl}}/img/tannhaus-book/tannhaus-book-{{i}}.webp" }{% if forloop.last == false %},{% endif %}
+{% endfor %}
+]

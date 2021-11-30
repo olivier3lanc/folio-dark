@@ -2,5 +2,5 @@
 ---
 [
 {% for i in (1..63) %}{ "url": "{{site.url}}{{site.baseurl}}/img/opening-credits-b/opening-credits-b-{{i}}.webp" }{% if forloop.last == false %},{% endif %}
-{% endfor %}s
+{% endfor %}
 ]
