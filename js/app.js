@@ -28,12 +28,12 @@ let app = {
             if (this.defaults.el_audio_player.paused) {
                 this.defaults.el_audio_player.play();
                 this.defaults.el_play_pause_button.innerHTML = '<span class="c-shape m-pause"></span>';
-                this.defaults.el_play_pause_button.setAttribute('title', '⏸ PAUSE soundtrack');
+                this.defaults.el_play_pause_button.setAttribute('title', '[PAUSE] soundtrack');
                 window.app_audio_player_paused = false;
             } else {
                 this.defaults.el_audio_player.pause();
                 this.defaults.el_play_pause_button.innerHTML = '<span class="c-shape m-play"></span>';
-                this.defaults.el_play_pause_button.setAttribute('title', '▶️ PLAY soundtrack');
+                this.defaults.el_play_pause_button.setAttribute('title', '[PLAY] soundtrack');
                 window.app_audio_player_paused = true;
             }
         }

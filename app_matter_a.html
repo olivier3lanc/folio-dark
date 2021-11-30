@@ -1,16 +1,24 @@
 ---
-title: Scene 3. Nairobi - Alba Flores | La Casa de Papel cinematics 
-description: Web cinematics inspired from the TV serie La Casa de Papel start credits
+title: DARK Scene
+description: Web cinematics inspired from the TV serie DARK
 layout: libdoc/playground
 ---
 <article class="u-h-100vh">
     <figure class="c-position m-fixed m-top-0 u-w-100 u-h-100vh u-brep-no-repeat u-bpos-center u-m-none u-p-none"
         style="background-image: url(img/machine-a/machine-a-1.webp); will-change: background-image, background-size;" 
-        scroll-frames="app_scene"
+        scroll-frames=""
         scroll-frames-detector="app_scene_detector" 
         data-json="json/app_matter_a.json">
     </figure>
     <div class="c-position m-fixed m-top-0 u-w-100 u-h-100vh u-bc-primary-rev u-pe-none u-faded u-bg-stripes"></div>
 </article>
 
-{% include _app_scene_nav.html app_prev_scene_href='app_ursula.html' app_next_scene_href='app_alvaro.html' %}
+<div id="app_scene_detector"></div>
+<div id="app_screen_height" class="{{include.app_scene_height|default:'u-h-100vh'}}"></div>
+
+<nav class="c-position m-relative m-botttom-xxl u-pb-xxl m-left-0 c-grid m-center m-nowrap u-w-100" role="navigation">
+    <button id="app_prev_scene" data-target-scene-id="" class="c-btn m-thin m-transparent" u-p-sm="sm" u-fs-xs="sm" title="Previous scene">Previous</button>
+    <button id="app_next_scene" data-target-scene-id="" class="c-btn m-thin" u-p-sm="sm" u-fs-xs="sm" title="Next scene">Next</button>
+</nav>
+
+<script src="{{ 'js/iframe.js' | absolute_url }}"></script>
