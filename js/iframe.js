@@ -96,14 +96,13 @@ const iframe = {
         }
         if (this.elements.loader !== null) {
             window.addEventListener('load', function() {
-                console.log('kl');
-                this.elements.loader.classList.add('u-transparent');
+                iframe.elements.loader.classList.add('u-transparent');
             });
         }
         document.querySelectorAll('#app_next_scene, #app_prev_scene').forEach(function(el) {
             el.addEventListener('click', function(e) {
                 e.preventDefault();
-                this.elements.loader.classList.remove('u-transparent');
+                iframe.elements.loader.classList.remove('u-transparent');
                 const target_url = e.target.getAttribute('href');
                 setTimeout(function() {
                     location.href = target_url;
