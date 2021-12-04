@@ -19,24 +19,41 @@ layout: libdoc/playground
     data-letter-spacing="|0.2 to 0.6|em">
     <span class="u-c-primary-max u-mr-xs">Netflix</span> <span class="u-c-primary u-ml-xs">presents</span>
 </h1> -->
-<h1 class="c-position m-fixed m-middle-center m-anchor-middle-center c-grid m-nowrap u-m-none u-ff-lead u-fw-100 u-fs-xxl u-tt-uppercase u-c-primary-max">
-    <span class="">D</span>
-    <span class="u-mr-md u-ml-md">A</span>
-    <span style="perspective: 1em;">
-        <span class="u-block" 
-            scroll-btween="title"
+<h1 class="c-position m-fixed m-middle-center m-anchor-middle-center c-grid m-nowrap u-m-none u-ff-lead u-fw-100 u-fs-xl u-tt-uppercase u-c-primary-max">
+    <span   scroll-btween="letter_1" 
             scroll-btween-detector="app_scene_detector"
-            data-transform="rotateY(|0 to 180|deg)">R</span>
+            data-margin="0em |0.1 to 1|em"
+            data-opacity="|0:0 to 60:1 to 100:1|">D</span>
+    <span   scroll-btween="letter_2" 
+            scroll-btween-detector="app_scene_detector"
+            data-margin="0em |0.1 to 1|em"
+            data-opacity="|0:0 to 60:1 to 100:1|">A</span>
+    <span   scroll-btween="letter_3" 
+            scroll-btween-detector="app_scene_detector"
+            data-margin="0em |0.1 to 1|em"
+            data-opacity="|0:0 to 60:1 to 100:1|"
+            style="perspective: 1em;">
+        <span class="u-block" 
+            scroll-btween="letter_3_1"
+            scroll-btween-detector="app_scene_detector"
+            data-transform="rotateY(|0:0 to 50:0 to 100:180|deg)">R</span>
     </span>
-    <span class="u-ml-md">K</span>
+    <span   scroll-btween="letter_4" 
+            scroll-btween-detector="app_scene_detector"
+            data-margin="0em |0.1 to 1|em"
+            data-opacity="|0:0 to 60:1 to 100:1|">K</span>
 </h1>
 
 <div id="app_scene_detector"></div>
 <div id="app_screen_height" class="{{include.app_scene_height|default:'u-h-100vh'}}"></div>
 
 <nav class="c-position m-relative m-botttom-xxl u-pb-xxl m-left-0 c-grid m-center m-nowrap u-w-100" role="navigation">
-    <a href="#" id="app_prev_scene" class="c-btn m-thin m-transparent" u-p-sm="sm" u-fs-xs="sm" title="Previous scene">Previous</a>
-    <a href="#" id="app_next_scene" class="c-btn m-thin" u-p-sm="sm" u-fs-xs="sm" title="Next scene">Next</a>
+    <a href="#" id="app_prev_scene" class="c-btn m-thin m-span-core m-span-transform m-transparent" u-p-sm="sm" u-fs-xs="sm" title="Previous scene">
+        <span>P</span><span>r</span><span>e</span><span>v</span><span>i</span><span>o</span><span>u</span><span>s</span>
+    </a>
+    <a href="#" id="app_next_scene" class="c-btn m-thin m-span-core m-span-transform" u-p-sm="sm" u-fs-xs="sm" title="Next scene">
+        <span>N</span><span>e</span><span>x</span><span>t</span>
+    </a>
 </nav>
 
 <script src="{{ 'js/iframe.js' | absolute_url }}"></script>

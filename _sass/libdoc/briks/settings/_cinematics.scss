@@ -1068,76 +1068,24 @@ $briks-components-generic: (
             font-family: my-font-family(lead),
             font-size: my-font-size(sm),
             text-transform: uppercase,
-            background-image: url('../img/stripe.svg'),
-            // outline: none,
-            pseudo-elements: (
-                before: (
-                    content: '',
-                    display: block,
-                    box-sizing: border-box,
-                    position: absolute,
-                    transition: all 300ms,
-                    width: 1em,
-                    height: 1em,
-                    left: 0,
-                    top: 0,
-                    border-left: my-border(large-solid-primary),
-                    border-top: my-border(large-solid-primary),
-                ),
-                after: (
-                    content: '',
-                    display: block,
-                    box-sizing: border-box,
-                    position: absolute,
-                    transition: all 300ms,
-                    width: 1em,
-                    height: 1em,
-                    right: 0,
-                    bottom: 0,
-                    border-right: my-border(large-solid-primary),
-                    border-bottom: my-border(large-solid-primary),
-                )
-            ),
-            pseudo-classes: (
-                hover: (
-                    // background-color: my-color(primary),
-                    color: my-color(primary),
-                    pseudo-elements: (
-                        before: (
-                            width: 120%,
-                            height: 120%,
-                        ),
-                        after: (
-                            width: 120%,
-                            height: 120%,
-                        )
-                    ),
-                )
-            ),
         ),
         modifiers: (
-            thin: (
-                pseudo-elements: (
-                    before: (
-                        border-left: my-border(thin-solid-primary),
-                        border-top: my-border(thin-solid-primary),
-                    ),
-                    after: (
-                        border-right: my-border(thin-solid-primary),
-                        border-bottom: my-border(thin-solid-primary),
-                    )
-                )
-            ),
             'transparent': (
                 background-image: none
             ),
-            noborder: (
-                pseudo-elements: (
-                    before: (
-                        display: none
-                    ),
-                    after: (
-                        display: none
+            span-core: (
+                perspective: 1em,
+            ),
+            span-transform: (
+                selector: '>span',
+                transition: (transform 1s, margin-left 500ms, margin-right 500ms),
+                margin-left: 0.1em,
+                margin-right: 0.1em,
+                pseudo-classes: (
+                    hover: (
+                        transform: rotateY(180deg),
+                        margin-left: 0.2em,
+                        margin-right: 0.2em,
                     )
                 )
             )
