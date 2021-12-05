@@ -453,7 +453,7 @@ $briks-utilities: (
         enabled: true,
         prefix: 'anim-',
         names-and-values: (
-            blink: 0.8s linear 0s infinite alternate blink,
+            rotate: 3s ease-in-out 0s infinite rotate,
             left-to-right: 3s linear 0s infinite alternate left_to_right,
             bottom-to-top: 4s linear 0s infinite alternate bottom_to_top,
             bottom-to-top-transform: 1s ease-in-out 0s infinite alternate bottom_to_top_transform,
@@ -1047,6 +1047,30 @@ $briks-components-generic: (
             )
         )
     ),
+    effect: (
+        enabled: true,
+        responsive: false,
+        defaults: (
+        ),
+        modifiers: (
+            span-180-core: (
+                perspective: 2em,
+                pseudo-classes: (
+                    hover: (
+                        selector: '>span',
+                        transform: rotateY(180deg)
+                    )
+                )
+            ),
+            span-180-rotate: (
+                selector: '>span',
+                pointer-events: none,
+                transition: (transform 1s),
+                margin-left: 0.2em,
+                margin-right: 0.2em,
+            )
+        )
+    ),
     btn: (
         enabled: true,
         responsive: false,
@@ -1072,22 +1096,6 @@ $briks-components-generic: (
         modifiers: (
             'transparent': (
                 background-image: none
-            ),
-            span-core: (
-                perspective: 2em,
-                pseudo-classes: (
-                    hover: (
-                        selector: '>span',
-                        transform: rotateY(180deg)
-                    )
-                )
-            ),
-            span-transform: (
-                selector: '>span',
-                pointer-events: none,
-                transition: (transform 1s),
-                margin-left: 0.2em,
-                margin-right: 0.2em,
             )
         )
     ),
