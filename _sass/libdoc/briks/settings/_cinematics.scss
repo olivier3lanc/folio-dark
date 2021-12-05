@@ -1074,20 +1074,20 @@ $briks-components-generic: (
                 background-image: none
             ),
             span-core: (
-                perspective: 1em,
+                perspective: 2em,
+                pseudo-classes: (
+                    hover: (
+                        selector: '>span',
+                        transform: rotateY(180deg)
+                    )
+                )
             ),
             span-transform: (
                 selector: '>span',
-                transition: (transform 1s, margin-left 500ms, margin-right 500ms),
-                margin-left: 0.1em,
-                margin-right: 0.1em,
-                pseudo-classes: (
-                    hover: (
-                        transform: rotateY(180deg),
-                        margin-left: 0.2em,
-                        margin-right: 0.2em,
-                    )
-                )
+                pointer-events: none,
+                transition: (transform 1s),
+                margin-left: 0.2em,
+                margin-right: 0.2em,
             )
         )
     ),
