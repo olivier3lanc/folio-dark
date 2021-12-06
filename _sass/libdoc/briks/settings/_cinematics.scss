@@ -1065,9 +1065,7 @@ $briks-components-generic: (
             span-180-rotate: (
                 selector: '>span',
                 pointer-events: none,
-                transition: (transform 1s),
-                margin-left: 0.2em,
-                margin-right: 0.2em,
+                transition: (transform 1s)
             )
         )
     ),

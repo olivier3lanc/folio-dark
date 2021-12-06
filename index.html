@@ -22,8 +22,8 @@ permalink: index.html # To avoid: Warning: Empty `slug` generated for '/'.
 </main>
 
 <div class="c-position m-fixed m-bottom-md m-left-md c-grid u-pe-none" m-bottom-xs="sm" m-left-xs="sm">
-    <button class="c-btn m-thin m-transparent u-p-sm u-pe-auto u-z-1" 
-        title="▶️ PLAY soundtrack"
+    <button class="c-btn m-thin m-transparent c-effect m-span-180-core m-span-180-rotate u-p-sm u-pe-auto u-z-1" 
+        title="PLAY soundtrack"
         id="app_play_pause" 
         onclick="app.playPauseAudio();app.audioConsentModal('close')">
         <span class="c-shape m-play"></span>
@@ -41,19 +41,19 @@ permalink: index.html # To avoid: Warning: Empty `slug` generated for '/'.
     </noscript>
 </div>
 
-<button class="c-position m-fixed m-top-md m-right-md c-btn m-noborder m-transparent u-p-sm" 
+<button class="c-position m-fixed m-top-md m-right-md c-btn m-noborder m-transparent c-effect m-span-180-core m-span-180-rotate u-p-none" 
         title="Enter fullscreen"
         id="app_fullscreen"
         m-top-sm="sm"
         m-right-sm="sm"
         onclick="app.toggleFullScreen()">
-    <span id="app_icon_fs_enter">
+    <span id="app_icon_fs_enter" style="width:2em;height:2em">
         <span class="c-position m-absolute m-top-0 m-left-0 u-bt-thin-solid-primary u-bl-thin-solid-primary u-w-smallbar u-h-smallbar"></span>
         <span class="c-position m-absolute m-bottom-0 m-left-0 u-bb-thin-solid-primary u-bl-thin-solid-primary u-w-smallbar u-h-smallbar"></span>
         <span class="c-position m-absolute m-bottom-0 m-right-0 u-bb-thin-solid-primary u-br-thin-solid-primary u-w-smallbar u-h-smallbar"></span>
         <span class="c-position m-absolute m-top-0 m-right-0 u-bt-thin-solid-primary u-br-thin-solid-primary u-w-smallbar u-h-smallbar"></span>
     </span>
-    <span id="app_icon_fs_exit" class="u-none">
+    <span id="app_icon_fs_exit" class="u-none" style="width:2em;height:2em">
         <span class="c-position m-absolute m-top-0 m-left-0 u-bb-thin-solid-primary u-br-thin-solid-primary u-w-smallbar u-h-smallbar"></span>
         <span class="c-position m-absolute m-bottom-0 m-left-0 u-bt-thin-solid-primary u-br-thin-solid-primary u-w-smallbar u-h-smallbar"></span>
         <span class="c-position m-absolute m-bottom-0 m-right-0 u-bt-thin-solid-primary u-bl-thin-solid-primary u-w-smallbar u-h-smallbar"></span>
