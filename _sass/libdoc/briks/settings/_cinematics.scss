@@ -425,6 +425,7 @@ $briks-backgrounds: (
     // search: 'right 20px center / 16px no-repeat url(data:image/svg+xml;base64,PHN2ZwogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICB3aWR0aD0iMjQiCiAgaGVpZ2h0PSIyNCIKICB2aWV3Qm94PSIwIDAgMjQgMjQiCiAgZmlsbD0ibm9uZSIKICBzdHJva2U9ImN1cnJlbnRDb2xvciIKICBzdHJva2Utd2lkdGg9IjIiCiAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogIHN0cm9rZS1saW5lam9pbj0icm91bmQiCj4KICA8Y2lyY2xlIGN4PSIxMSIgY3k9IjExIiByPSI4IiAvPgogIDxsaW5lIHgxPSIyMSIgeTE9IjIxIiB4Mj0iMTYuNjUiIHkyPSIxNi42NSIgLz4KPC9zdmc+Cg==)',
     // loading: 'center no-repeat 'my-color(primary-edge) 'url(data:image/svg+xml;base64,PHN2ZwogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICB3aWR0aD0iMjQiCiAgaGVpZ2h0PSIyNCIKICB2aWV3Qm94PSIwIDAgMjQgMjQiCiAgZmlsbD0ibm9uZSIKICBzdHJva2U9ImN1cnJlbnRDb2xvciIKICBzdHJva2Utd2lkdGg9IjIiCiAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogIHN0cm9rZS1saW5lam9pbj0icm91bmQiCj4KICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIgLz4KICA8cG9seWxpbmUgcG9pbnRzPSIxMiA2IDEyIDEyIDE2IDE0IiAvPgo8L3N2Zz4K)',
     stripes: 'url(../img/stripe.svg)',
+    gradient-vertical: linear-gradient(0deg, rgba(31,31,31,1) 0%, rgba(31,31,31,0) 100%),
     // la-casa-de-papel: 'center / cover no-repeat 'my-color(primary-rev) 'url(../img/html5_la_casa_de_papel.webp)',
     // tokyo-and-rio: 'center / cover no-repeat 'my-color(primary-rev) 'url(../img/html5_tokyo_and_rio.webp)',
     sic-mundus: 'center / contain no-repeat transparent url(../img/sic-mundus.svg)',
@@ -964,6 +965,21 @@ Y88b  d88P Y88..88P 888  888  888 888 d88P Y88..88P 888  888 Y8b.     888  888 Y
     );
 */
 $briks-components-generic: (
+    background: (
+        enabled: true,
+        responsive: false,
+        defaults: (),
+        modifiers: (
+            clip-text: (
+                -webkit-background-clip: text,
+                -webkit-text-fill-color: transparent,
+                background-clip: text
+            ),
+            gradient-vertical: (
+                background-image: linear-gradient(0deg, rgb(255,255,255) 0%, rgb(0,0,0) 100%)
+            ),
+        )
+    ),
     shape: (
         enabled: true,
         responsive: false,
