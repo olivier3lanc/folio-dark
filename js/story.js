@@ -42,5 +42,8 @@ const story = [
     'matter-l',
     'matter-m',
     'matter-g',
-    'matter-j'
+    'matter-j',
+    'wormhole-a',
+    'wormhole-b',
+    'wormhole-c'
 ]
