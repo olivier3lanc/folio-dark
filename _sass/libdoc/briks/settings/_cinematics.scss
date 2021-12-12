@@ -711,6 +711,24 @@ $briks-utilities: (
         additional-names-and-values: (),
         responsive: true
     ),
+    min-width: (
+        enabled: true,
+        prefix: 'minw-',
+        names-and-values: (
+            100vw: 100vw
+        ),
+        additional-names-and-values: (),
+        responsive: true
+    ),
+    min-height: (
+        enabled: true,
+        prefix: 'minh-',
+        names-and-values: (
+            100vh: 100vh
+        ),
+        additional-names-and-values: (),
+        responsive: true
+    ),
     opacity: (
         enabled: true,
         prefix: '',

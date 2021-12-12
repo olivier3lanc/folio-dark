@@ -4,7 +4,7 @@ title: DARK HTML5 cinematics # title of the documentation
 description: >- # Description of the docs. (>- means to ignore newlines until next param)
   Web cinematics inspired from DARK serie opening credits
 # baseurl: /ow/folio-2021/dark/folio-dark/_site # the subpath of your site, e.g. /blog
-# url: http://192.168.1.54 # the base hostname & protocol for your site, e.g. http://example.com
+# url: http://localhost # the base hostname & protocol for your site, e.g. http://example.com
 #permalink: /:path/:basename/:output_ext
 #destination: ../marcelrent/public/proto-app # Build relative path destination. The destination directory e.g. /blog
 #keep_files: [cache]
@@ -97,6 +97,8 @@ playground:
     # Absolute URL starting with 'http'
     stylesheets: 
         - /css/normalize.css
+        - /css/cinematics.css
+        # - /css/noscript.css
     # Javascript in <head>. Can be either:
     # Relative URL from site root starting with slash /
     # Absolute URL starting with 'http'
@@ -110,6 +112,7 @@ playground:
         - /js/ola.min.js
         - /js/scroll-frames.js
         - /js/scroll-btween.js
+        - /js/app.js
 
 # Settings for the assets layout
 assets:
