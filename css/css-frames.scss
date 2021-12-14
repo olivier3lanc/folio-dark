@@ -2,30 +2,382 @@
 ---
 // PURE CSS VIDEO FRAMES
 $video_frames: (
-    agnes: (
-        amount: 6,
+    jonas-teen: (
+        amount: 24,
         aspect_ratio: 2,
         duration: 1s,
         direction: alternate,
-        url_start: '../img/portraits/agnes/agnes_',
-        url_end: '.webp',
-    ),
-    jonas: (
-        amount: 24,
-        aspect_ratio: 2,
-        duration: 2s,
-        direction: alternate,
-        url_start: '../img/portraits/jonas/jonas_',
-        url_end: '.webp',
+        url_start: '../img/portraits/jonas-teen/jonas-teen_',
+        url_end: '.webp'
     ),
     martha-teen: (
         amount: 24,
         aspect_ratio: 2,
-        duration: 2s,
+        duration: 1s,
         direction: alternate,
-        url_start: '../img/portraits/marta-teen/marta-teen_',
-        url_end: '.webp',
+        url_start: '../img/portraits/martha-teen/martha-teen_',
+        url_end: '.webp'
     ),
+    bartosz: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/bartosz/bartosz_',
+        url_end: '.webp'
+    ),
+    magnus: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/magnus/magnus_',
+        url_end: '.webp'
+    ),
+    franziska: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/franziska/franziska_',
+        url_end: '.webp'
+    ),
+    elisabeth: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/elisabeth/elisabeth_',
+        url_end: '.webp'
+    ),
+    mikkel: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/mikkel/mikkel_',
+        url_end: '.webp'
+    ),
+    michael: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/michael/michael_',
+        url_end: '.webp'
+    ),
+    hannah-child: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/hannah-child/hannah-child_',
+        url_end: '.webp'
+    ),
+    hannah: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/hannah/hannah_',
+        url_end: '.webp'
+    ),
+    ulrich: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/ulrich/ulrich_',
+        url_end: '.webp'
+    ),
+    ulrich-teen: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/ulrich-teen/ulrich-teen_',
+        url_end: '.webp'
+    ),
+    katharina-teen: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/katharina-teen/katharina-teen_',
+        url_end: '.webp'
+    ),
+    katharina: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/katharina/katharina_',
+        url_end: '.webp'
+    ),
+    charlotte-teen: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/charlotte-teen/charlotte-teen_',
+        url_end: '.webp'
+    ),
+    charlotte: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/charlotte/charlotte_',
+        url_end: '.webp'
+    ),
+    aleksander-teen: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/aleksander-teen/aleksander-teen_',
+        url_end: '.webp'
+    ),
+    aleksander: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/aleksander/aleksander_',
+        url_end: '.webp'
+    ),
+    regina-teen: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/regina-teen/regina-teen_',
+        url_end: '.webp'
+    ),
+    regina: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/regina/regina_',
+        url_end: '.webp'
+    ),
+    claudia-child: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/claudia-child/claudia-child_',
+        url_end: '.webp'
+    ),
+    claudia: (
+        amount: 28,
+        aspect_ratio: 2,
+        duration: 1.1s,
+        direction: alternate,
+        url_start: '../img/portraits/claudia/claudia_',
+        url_end: '.webp'
+    ),
+    claudia-old: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/claudia-old/claudia-old_',
+        url_end: '.webp'
+    ),
+    helge-child: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/helge-child/helge-child_',
+        url_end: '.webp'
+    ),
+    helge: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/helge/helge_',
+        url_end: '.webp'
+    ),
+    helge-old: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/helge-old/helge-old_',
+        url_end: '.webp'
+    ),
+    tannhaus: (
+        amount: 23,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/tannhaus/tannhaus_',
+        url_end: '.webp'
+    ),
+    tannhaus-old: (
+        amount: 22,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/tannhaus-old/tannhaus-old_',
+        url_end: '.webp'
+    ),
+    bernd: (
+        amount: 21,
+        aspect_ratio: 2,
+        duration: 0.85s,
+        direction: alternate,
+        url_start: '../img/portraits/bernd/bernd_',
+        url_end: '.webp'
+    ),
+    bernd-old: (
+        amount: 20,
+        aspect_ratio: 2,
+        duration: 0.85s,
+        direction: alternate,
+        url_start: '../img/portraits/bernd-old/bernd-old_',
+        url_end: '.webp'
+    ),
+    jana-teen: (
+        amount: 19,
+        aspect_ratio: 2,
+        duration: 0.76s,
+        direction: alternate,
+        url_start: '../img/portraits/jana-teen/jana-teen_',
+        url_end: '.webp'
+    ),
+    jana: (
+        amount: 18,
+        aspect_ratio: 2,
+        duration: 0.76s,
+        direction: alternate,
+        url_start: '../img/portraits/jana/jana_',
+        url_end: '.webp'
+    ),
+    jana-old: (
+        amount: 17,
+        aspect_ratio: 2,
+        duration: 0.7s,
+        direction: alternate,
+        url_start: '../img/portraits/jana-old/jana-old_',
+        url_end: '.webp' 
+    ),
+    egon: (
+        amount: 16,
+        aspect_ratio: 2,
+        duration: 0.6s,
+        direction: alternate,
+        url_start: '../img/portraits/egon/egon_',
+        url_end: '.webp'
+    ),
+    egon-old: (
+        amount: 15,
+        aspect_ratio: 2,
+        duration: 0.6s,
+        direction: alternate,
+        url_start: '../img/portraits/egon-old/egon-old_',
+        url_end: '.webp'
+    ),
+    tronte-child: (
+        amount: 14,
+        aspect_ratio: 2,
+        duration: 0.5s,
+        direction: alternate,
+        url_start: '../img/portraits/tronte-child/tronte-child_',
+        url_end: '.webp'
+    ),
+    tronte: (
+        amount: 13,
+        aspect_ratio: 2,
+        duration: 0.5s,
+        direction: alternate,
+        url_start: '../img/portraits/tronte/tronte_',
+        url_end: '.webp'
+    ),
+    tronte-old: (
+        amount: 12,
+        aspect_ratio: 2,
+        duration: 0.5s,
+        direction: alternate,
+        url_start: '../img/portraits/tront-old/tronte-old_',
+        url_end: '.webp'
+    ),
+    ines-teen: (
+        amount: 11,
+        aspect_ratio: 2,
+        duration: 0.45s,
+        direction: alternate,
+        url_start: '../img/portraits/ines-teen/ines-teen_',
+        url_end: '.webp'
+    ),
+    ines: (
+        amount: 10,
+        aspect_ratio: 2,
+        duration: 0.4s,
+        direction: alternate,
+        url_start: '../img/portraits/ines/ines_',
+        url_end: '.webp'
+    ),
+    ines-old: (
+        amount: 9,
+        aspect_ratio: 2,
+        duration: 0.4s,
+        direction: alternate,
+        url_start: '../img/portraits/ines-old/ines-old_',
+        url_end: '.webp'
+    ),
+    peter: (
+        amount: 8,
+        aspect_ratio: 2,
+        duration: 0.33s,
+        direction: alternate,
+        url_start: '../img/portraits/peter/peter_',
+        url_end: '.webp'
+    ),
+    doris: (
+        amount: 7,
+        aspect_ratio: 2,
+        duration: 0.2s,
+        direction: alternate,
+        url_start: '../img/portraits/doris/doris_',
+        url_end: '.webp'
+    ),
+    agnes: (
+        amount: 6,
+        aspect_ratio: 2,
+        duration: 0.2s,
+        direction: alternate,
+        url_start: '../img/portraits/agnes/agnes_',
+        url_end: '.webp'
+    ),
+    greta: (
+        amount: 6,
+        aspect_ratio: 2,
+        duration: 0.2s,
+        direction: alternate,
+        url_start: '../img/portraits/greta/greta_',
+        url_end: '.webp'
+    ),
+    jonas: (
+        amount: 6,
+        aspect_ratio: 2,
+        duration: 0.2s,
+        direction: alternate,
+        url_start: '../img/portraits/jonas/jonas_',
+        url_end: '.webp'
+    ),
+    noah: (
+        amount: 67,
+        aspect_ratio: 2,
+        duration: 3s,
+        direction: alternate,
+        url_start: '../img/portraits/noa/noa_',
+        url_end: '.webp'
+    )
 );
 
 @function backgroundImage($url_start, $url_end, $total) {
