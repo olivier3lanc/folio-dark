@@ -341,7 +341,7 @@ $video_frames: (
     doris: (
         amount: 7,
         aspect_ratio: 2,
-        duration: 0.2s,
+        duration: 1s,
         direction: alternate,
         url_start: '../img/portraits/doris/doris_',
         url_end: '.webp'
@@ -349,13 +349,13 @@ $video_frames: (
     agnes: (
         amount: 6,
         aspect_ratio: 2,
-        duration: 0.2s,
+        duration: 0.8s,
         direction: alternate,
         url_start: '../img/portraits/agnes/agnes_',
         url_end: '.webp'
     ),
     greta: (
-        amount: 6,
+        amount: 5,
         aspect_ratio: 2,
         duration: 0.2s,
         direction: alternate,
@@ -363,9 +363,9 @@ $video_frames: (
         url_end: '.webp'
     ),
     jonas: (
-        amount: 6,
+        amount: 5,
         aspect_ratio: 2,
-        duration: 0.2s,
+        duration: 0.4s,
         direction: alternate,
         url_start: '../img/portraits/jonas/jonas_',
         url_end: '.webp'
@@ -375,7 +375,7 @@ $video_frames: (
         aspect_ratio: 2,
         duration: 3s,
         direction: alternate,
-        url_start: '../img/portraits/noa/noa_',
+        url_start: '../img/portraits/noah/noah_',
         url_end: '.webp'
     )
 );

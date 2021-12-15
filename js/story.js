@@ -144,3 +144,194 @@ const portraits = [
     'jonas',
     'noah'
 ]
+
+const casting = {
+    'jonas-teen': {
+        character: 'Jonas Kahnwald',
+        actor: 'Louis Hofmann'
+    },
+    'martha-teen': {
+        character: 'Martha Nielsen',
+        actor: 'Lisa Vicari'
+    },
+    'bartosz': {
+        character: 'Bartosz Tiedemann',
+        actor: 'Paul Lux'
+    },
+    'magnus': {
+        character: 'Magnus Nielson',
+        actor: 'Moritz Jahn'
+    },
+    'franziska': {
+        character: 'Franziska Doppler',
+        actor: 'Gina Stiebitz'
+    },
+    'elisabeth': {
+        character: 'Elisabeth Doppler',
+        actor: 'Carlotta von Falkenhayn'
+    },
+    'mikkel': {
+        character: 'Mikkel Nielsen',
+        actor: 'Daan Lennard Liebrenz'
+    },
+    'michael': {
+        character: '',
+        actor: ''
+    },
+    'hannah-child': {
+        character: '',
+        actor: ''
+    },
+    'hannah': {
+        character: 'Hannah Kahnwald',
+        actor: 'Maja Schöne'
+    },
+    'ulrich': {
+        character: 'Ulrich Nielsen',
+        actor: 'Oliver Masucci'
+    },
+    'ulrich-teen': {
+        character: '',
+        actor: ''
+    },
+    'katharina-teen': {
+        character: '',
+        actor: ''
+    },
+    'katharina': {
+        character: 'Katharina Nielsen',
+        actor: 'Jördis Triebel'
+    },
+    'charlotte-teen': {
+        character: '',
+        actor: ''
+    },
+    'charlotte': {
+        character: 'Charlotte Doppler',
+        actor: 'Karoline Eichhorn'
+    },
+    'aleksander-teen': {
+        character: '',
+        actor: ''
+    },
+    'aleksander': {
+        character: 'Aleksander Tiedemann',
+        actor: 'Peter Benedict'
+    },
+    'regina-teen': {
+        character: '',
+        actor: ''
+    },
+    'regina': {
+        character: 'Regina Tiedemann',
+        actor: 'Deborah Kaufmann'
+    },
+    'claudia-child': {
+        character: '',
+        actor: ''
+    },
+    'claudia': {
+        character: 'Claudia Tiedemann',
+        actor: 'Julika Jenkins'
+    },
+    'claudia-old': {
+        character: '',
+        actor: ''
+    },
+    'helge-child': {
+        character: '',
+        actor: ''
+    },
+    'helge': {
+        character: '',
+        actor: ''
+    },
+    'helge-old': {
+        character: '',
+        actor: ''
+    },
+    'tannhaus': {
+        character: '',
+        actor: ''
+    },
+    'tannhaus-old': {
+        character: '',
+        actor: ''
+    },
+    'bernd': {
+        character: '',
+        actor: ''
+    },
+    'bernd-old': {
+        character: '',
+        actor: ''
+    },
+    'jana-teen': {
+        character: '',
+        actor: ''
+    },
+    'jana': {
+        character: '',
+        actor: ''
+    },
+    'jana-old': {
+        character: '',
+        actor: ''
+    },
+    'egon': {
+        character: '',
+        actor: ''
+    },
+    'egon-old': {
+        character: '',
+        actor: ''
+    },
+    'tronte-child': {
+        character: '',
+        actor: ''
+    },
+    'tronte': {
+        character: '',
+        actor: ''
+    },
+    'tronte-old': {
+        character: '',
+        actor: ''
+    },
+    'ines-teen': {
+        character: '',
+        actor: ''
+    },
+    'ines': {
+        character: '',
+        actor: ''
+    },
+    'ines-old': {
+        character: '',
+        actor: ''
+    },
+    'peter': {
+        character: 'Peter Doppler',
+        actor: 'Stephan Kampwirth'
+    },
+    'doris': {
+        character: '',
+        actor: ''
+    },
+    'agnes': {
+        character: '',
+        actor: ''
+    },
+    'greta': {
+        character: '',
+        actor: ''
+    },
+    'jonas': {
+        character: 'L\'Étranger',
+        actor: 'Andreas Pietschmann'
+    },
+    'noah': {
+        character: '',
+        actor: ''
+    },
+}
