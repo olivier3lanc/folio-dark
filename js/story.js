@@ -1,51 +1,4 @@
 const story = [
-    'opening-credits-a',
-    'opening-credits-b',
-    'opening-credits-d',
-    'opening-credits-e',
-    'opening-credits-g',
-    'opening-credits-h',
-    'opening-credits-i',
-    'opening-credits-j',
-    'opening-credits-l',
-    'opening-credits-m',
-    'opening-credits-n',
-    'opening-credits-o',
-    'opening-credits-q',
-    'opening-credits-r',
-    'opening-credits-s',
-    'opening-credits-u',
-    'opening-credits-v',
-    'grotttes-a',
-    'grotttes-c',
-    'foret-noa',
-    'blockhaus-a',
-    'sic-mundus-tattoo',
-    'blockhaus-b',
-    'route-a',
-    'route-c',
-    'blast',
-    'claudia-futur-a',
-    'claudia-futur-b',
-    'machine-b',
-    'machine-c',
-    'particles-a',
-    'particles-b',
-    'particles-c',
-    'particles-d',
-    'particles-e',
-    'adam-a',
-    'st-christophe-c',
-    'matter-c',
-    'matter-e',
-    'matter-f',
-    'matter-l',
-    'matter-m',
-    'matter-g',
-    'matter-j',
-    'wormhole-a',
-    'wormhole-b',
-    'wormhole-c',
     'jonas-teen',
     'martha-teen',
     'bartosz',
@@ -92,7 +45,54 @@ const story = [
     'agnes',
     'greta',
     'jonas',
-    'noah'
+    'noah',
+    'opening-credits-a',
+    'opening-credits-b',
+    'opening-credits-d',
+    'opening-credits-e',
+    'opening-credits-g',
+    'opening-credits-h',
+    'opening-credits-i',
+    'opening-credits-j',
+    'opening-credits-l',
+    'opening-credits-m',
+    'opening-credits-n',
+    'opening-credits-o',
+    'opening-credits-q',
+    'opening-credits-r',
+    'opening-credits-s',
+    'opening-credits-u',
+    'opening-credits-v',
+    'grotttes-a',
+    'grotttes-c',
+    'foret-noa',
+    'blockhaus-a',
+    'sic-mundus-tattoo',
+    'blockhaus-b',
+    'route-a',
+    'route-c',
+    'blast',
+    'claudia-futur-a',
+    'claudia-futur-b',
+    'machine-b',
+    'machine-c',
+    'particles-a',
+    'particles-b',
+    'particles-c',
+    'particles-d',
+    'particles-e',
+    'adam-a',
+    'st-christophe-c',
+    'matter-c',
+    'matter-e',
+    'matter-f',
+    'matter-l',
+    'matter-m',
+    'matter-g',
+    'matter-j',
+    'wormhole-a',
+    'wormhole-b',
+    'wormhole-c'
 ];
 
 const portraits = [
@@ -175,12 +175,12 @@ const casting = {
         actor: 'Daan Lennard Liebrenz'
     },
     'michael': {
-        character: '',
-        actor: ''
+        character: 'Michael Kahnwald',
+        actor: 'Sebastian Rudolph'
     },
     'hannah-child': {
-        character: '',
-        actor: ''
+        character: 'Hannah Kahnwald',
+        actor: 'Ella Lee'
     },
     'hannah': {
         character: 'Hannah Kahnwald',
@@ -191,147 +191,147 @@ const casting = {
         actor: 'Oliver Masucci'
     },
     'ulrich-teen': {
-        character: '',
-        actor: ''
+        character: 'Ulrich Nielsen',
+        actor: 'Ludger Bökelmann'
     },
     'katharina-teen': {
-        character: '',
-        actor: ''
+        character: 'Katharina Nielsen',
+        actor: 'Nele Trebs'
     },
     'katharina': {
         character: 'Katharina Nielsen',
         actor: 'Jördis Triebel'
     },
     'charlotte-teen': {
-        character: '',
-        actor: ''
+        character: 'Charlotte Doppler',
+        actor: 'Stephanie Amarell'
     },
     'charlotte': {
         character: 'Charlotte Doppler',
         actor: 'Karoline Eichhorn'
     },
     'aleksander-teen': {
-        character: '',
-        actor: ''
+        character: 'Aleksander Tiedemann',
+        actor: 'Béla Gabor Lenz'
     },
     'aleksander': {
         character: 'Aleksander Tiedemann',
         actor: 'Peter Benedict'
     },
     'regina-teen': {
-        character: '',
-        actor: ''
+        character: 'Regina Tiedemann',
+        actor: 'Lydia Maria Makrides'
     },
     'regina': {
         character: 'Regina Tiedemann',
         actor: 'Deborah Kaufmann'
     },
     'claudia-child': {
-        character: '',
-        actor: ''
+        character: 'Claudia Tiedemann',
+        actor: 'Gwendolyn Göbel'
     },
     'claudia': {
         character: 'Claudia Tiedemann',
         actor: 'Julika Jenkins'
     },
     'claudia-old': {
-        character: '',
-        actor: ''
+        character: 'Claudia Tiedemann',
+        actor: 'Lisa Kreuzer'
     },
     'helge-child': {
-        character: '',
-        actor: ''
+        character: 'Helge Doppler',
+        actor: 'Tom Philipp'
     },
     'helge': {
-        character: '',
-        actor: ''
+        character: 'Helge Doppler',
+        actor: 'Peter Schneider'
     },
     'helge-old': {
-        character: '',
-        actor: ''
+        character: 'Helge Doppler',
+        actor: 'Hermann Beyer'
     },
     'tannhaus': {
-        character: '',
-        actor: ''
+        character: 'H.G. Tannhaus',
+        actor: 'Arnd Klawitter'
     },
     'tannhaus-old': {
-        character: '',
-        actor: ''
+        character: 'H.G. Tannhaus',
+        actor: 'Christian Steyer'
     },
     'bernd': {
-        character: '',
-        actor: ''
+        character: 'Bernd Doppler',
+        actor: 'Anatole Taubman'
     },
     'bernd-old': {
-        character: '',
-        actor: ''
+        character: 'Bernd Doppler',
+        actor: 'Michael Mendl'
     },
     'jana-teen': {
-        character: '',
-        actor: ''
+        character: 'Jana Nielsen',
+        actor: 'Rike Sindler'
     },
     'jana': {
-        character: '',
-        actor: ''
+        character: 'Jana Nielsen',
+        actor: 'Anne Lebinsky'
     },
     'jana-old': {
-        character: '',
-        actor: ''
+        character: 'Jana Nielsen',
+        actor: 'Tatja Seibt'
     },
     'egon': {
-        character: '',
-        actor: ''
+        character: 'Egon Tiedemann',
+        actor: 'Sebastian Hülk'
     },
     'egon-old': {
-        character: '',
-        actor: ''
+        character: 'Egon Tiedemann',
+        actor: 'Christian Pätzold'
     },
     'tronte-child': {
-        character: '',
-        actor: ''
+        character: 'Tronte Nielsen',
+        actor: 'Joshio Marlon'
     },
     'tronte': {
-        character: '',
-        actor: ''
+        character: 'Tronte Nielsen',
+        actor: 'Felix Kramer'
     },
     'tronte-old': {
-        character: '',
-        actor: ''
+        character: 'Tronte Nielsen',
+        actor: 'Walter Kreye'
     },
     'ines-teen': {
-        character: '',
-        actor: ''
+        character: 'Ines Kahnwald',
+        actor: 'Lena Urzendowsky'
     },
     'ines': {
-        character: '',
-        actor: ''
+        character: 'Ines Kahnwald',
+        actor: 'Anne Ratte-Polle'
     },
     'ines-old': {
-        character: '',
-        actor: ''
+        character: 'Ines Kahnwald',
+        actor: 'Angela Winkler'
     },
     'peter': {
         character: 'Peter Doppler',
         actor: 'Stephan Kampwirth'
     },
     'doris': {
-        character: '',
-        actor: ''
+        character: 'Doris Tiedemann',
+        actor: 'Luise Heyer'
     },
     'agnes': {
-        character: '',
-        actor: ''
+        character: 'Agnes Nielsen',
+        actor: 'Antje Traue'
     },
     'greta': {
-        character: '',
-        actor: ''
+        character: 'Greta Doppler',
+        actor: 'Cordelia Wege'
     },
     'jonas': {
         character: 'L\'Étranger',
         actor: 'Andreas Pietschmann'
     },
     'noah': {
-        character: '',
-        actor: ''
+        character: 'Noah',
+        actor: 'Mark Waschke'
     },
 }

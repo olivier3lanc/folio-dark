@@ -189,6 +189,14 @@ $briks-fonts: (
         path:        '../fonts/',
         fallback:    'sans-serif'
     ),
+    lead-alt: (
+        type:        'local',
+        name:        'AvenirNextRoundedStd-Reg',
+        filename:    'AvenirNextRoundedStd-Reg',
+        weight:      100,
+        path:        '../fonts/',
+        fallback:    'sans-serif'
+    ),
 );
 
 /*
@@ -648,7 +656,7 @@ $briks-utilities: (
             'short': -0.01em,
             'title': -0.04em,
             'large': 0.1em,
-            'xlarge': 0.3em,
+            'xlarge': 0.25em,
         ),
         additional-names-and-values: (),
         responsive: false
@@ -660,7 +668,7 @@ $briks-utilities: (
             '0': 0,
             '1': 1em,
             'base': 1.3em,
-            'title': 0.9em,
+            'smooth': 1.7em,
             'inherit': inherit,
             'initial': initial
         ),

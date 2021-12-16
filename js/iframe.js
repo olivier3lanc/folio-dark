@@ -53,8 +53,10 @@ const iframe = {
         dark_split_text: function(text1 = 'Netflix', text2 = 'Presents') {
             return `
                 <h1 id="app_dark_text_split"
-                    class="c-position m-fixed m-middle-center m-anchor-middle-center u-m-none u-ff-lead u-fw-100 u-fs-md u-tt-uppercase">
-                    <span class="u-c-primary-max u-mr-xs">${text1}</span> <span class="u-c-primary u-ml-xs">${text2}</span>
+                    class="c-position m-fixed m-middle-center m-anchor-middle-center u-m-none u-ff-lead-alt u-fw-100 u-fs-md u-tt-uppercase u-lsp-xlarge u-ta-center u-lh-smooth"
+                    u-fs-xs="sm"
+                    u-fs-sm="md">
+                    <span class="u-c-primary-max u-ml-xs u-mr-xs u-ws-nowrap">${text1}</span> <span class="u-c-primary u-mr-xs u-ml-xs u-ws-nowrap">${text2}</span>
                 </h1>
             `
         },
@@ -81,8 +83,10 @@ const iframe = {
             let markup_scene = '';
             if (portraits.indexOf(scene_current_id) > -1) {
                 markup_scene = this.templates.css_video_frames(scene_current_id);
+                markup_scene += this.templates.dark_split_text(casting[scene_current_id]['character'], casting[scene_current_id]['actor']);
             } else {
                 markup_scene = this.templates.scroll_frames('json/'+scene_current_id+'.json');
+                markup_scene += this.templates.dark_split_text();
             }
             // Texts
             switch (scene_current_id) {
@@ -91,13 +95,10 @@ const iframe = {
                 case 'opening-credits-v':
                     markup_scene += this.templates.dark_title();
                     break;
-                default:
-                    markup_scene += this.templates.dark_split_text();
             }
             this.elements.main.innerHTML = markup_scene;
         }
         if (this.elements.loader !== null) {
-            console.log('lmklm');
             window.addEventListener('load', function() {
                 iframe.elements.loader.classList.add('u-transparent');
             });
