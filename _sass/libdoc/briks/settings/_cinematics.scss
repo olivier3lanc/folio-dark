@@ -191,8 +191,8 @@ $briks-fonts: (
     ),
     lead-alt: (
         type:        'local',
-        name:        'AvenirNextRoundedStd-Reg',
-        filename:    'AvenirNextRoundedStd-Reg',
+        name:        'Gotham-Light',
+        filename:    'Gotham-Light',
         weight:      100,
         path:        '../fonts/',
         fallback:    'sans-serif'
@@ -1129,7 +1129,7 @@ $briks-components-generic: (
             background-color: transparent,
             color: my-color(primary),
             border: none,
-            font-family: my-font-family(lead),
+            font-family: my-font-family(lead-alt),
             font-size: my-font-size(sm),
             text-transform: uppercase,
         ),

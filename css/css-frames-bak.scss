@@ -1,0 +1,487 @@
+
+// PURE CSS VIDEO FRAMES
+$video_frames: (
+    particles-b: (
+        amount: 101,
+        aspect_ratio: 2,
+        duration: 4s,
+        direction: alternate,
+        url_start: '../img/particles-b/particles-b-',
+        url_end: '.webp'
+    ),
+    jonas-teen: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/jonas-teen/jonas-teen_',
+        url_end: '.webp'
+    ),
+    martha-teen: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/martha-teen/martha-teen_',
+        url_end: '.webp'
+    ),
+    bartosz: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/bartosz/bartosz_',
+        url_end: '.webp'
+    ),
+    magnus: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/magnus/magnus_',
+        url_end: '.webp'
+    ),
+    franziska: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/franziska/franziska_',
+        url_end: '.webp'
+    ),
+    elisabeth: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/elisabeth/elisabeth_',
+        url_end: '.webp'
+    ),
+    mikkel: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/mikkel/mikkel_',
+        url_end: '.webp'
+    ),
+    michael: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/michael/michael_',
+        url_end: '.webp'
+    ),
+    hannah-child: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/hannah-child/hannah-child_',
+        url_end: '.webp'
+    ),
+    hannah: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/hannah/hannah_',
+        url_end: '.webp'
+    ),
+    ulrich: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/ulrich/ulrich_',
+        url_end: '.webp'
+    ),
+    ulrich-teen: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/ulrich-teen/ulrich-teen_',
+        url_end: '.webp'
+    ),
+    katharina-teen: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/katharina-teen/katharina-teen_',
+        url_end: '.webp'
+    ),
+    katharina: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/katharina/katharina_',
+        url_end: '.webp'
+    ),
+    charlotte-teen: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/charlotte-teen/charlotte-teen_',
+        url_end: '.webp'
+    ),
+    charlotte: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/charlotte/charlotte_',
+        url_end: '.webp'
+    ),
+    aleksander-teen: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/aleksander-teen/aleksander-teen_',
+        url_end: '.webp'
+    ),
+    aleksander: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/aleksander/aleksander_',
+        url_end: '.webp'
+    ),
+    regina-teen: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/regina-teen/regina-teen_',
+        url_end: '.webp'
+    ),
+    regina: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/regina/regina_',
+        url_end: '.webp'
+    ),
+    claudia-child: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/claudia-child/claudia-child_',
+        url_end: '.webp'
+    ),
+    claudia: (
+        amount: 28,
+        aspect_ratio: 2,
+        duration: 1.1s,
+        direction: alternate,
+        url_start: '../img/portraits/claudia/claudia_',
+        url_end: '.webp'
+    ),
+    claudia-old: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/claudia-old/claudia-old_',
+        url_end: '.webp'
+    ),
+    helge-child: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/helge-child/helge-child_',
+        url_end: '.webp'
+    ),
+    helge: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/helge/helge_',
+        url_end: '.webp'
+    ),
+    helge-old: (
+        amount: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/helge-old/helge-old_',
+        url_end: '.webp'
+    ),
+    tannhaus: (
+        amount: 23,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/tannhaus/tannhaus_',
+        url_end: '.webp'
+    ),
+    tannhaus-old: (
+        amount: 22,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/tannhaus-old/tannhaus-old_',
+        url_end: '.webp'
+    ),
+    bernd: (
+        amount: 21,
+        aspect_ratio: 2,
+        duration: 0.85s,
+        direction: alternate,
+        url_start: '../img/portraits/bernd/bernd_',
+        url_end: '.webp'
+    ),
+    bernd-old: (
+        amount: 20,
+        aspect_ratio: 2,
+        duration: 0.85s,
+        direction: alternate,
+        url_start: '../img/portraits/bernd-old/bernd-old_',
+        url_end: '.webp'
+    ),
+    jana-teen: (
+        amount: 19,
+        aspect_ratio: 2,
+        duration: 0.76s,
+        direction: alternate,
+        url_start: '../img/portraits/jana-teen/jana-teen_',
+        url_end: '.webp'
+    ),
+    jana: (
+        amount: 18,
+        aspect_ratio: 2,
+        duration: 0.76s,
+        direction: alternate,
+        url_start: '../img/portraits/jana/jana_',
+        url_end: '.webp'
+    ),
+    jana-old: (
+        amount: 17,
+        aspect_ratio: 2,
+        duration: 0.7s,
+        direction: alternate,
+        url_start: '../img/portraits/jana-old/jana-old_',
+        url_end: '.webp' 
+    ),
+    egon: (
+        amount: 16,
+        aspect_ratio: 2,
+        duration: 0.6s,
+        direction: alternate,
+        url_start: '../img/portraits/egon/egon_',
+        url_end: '.webp'
+    ),
+    egon-old: (
+        amount: 15,
+        aspect_ratio: 2,
+        duration: 0.6s,
+        direction: alternate,
+        url_start: '../img/portraits/egon-old/egon-old_',
+        url_end: '.webp'
+    ),
+    tronte-child: (
+        amount: 14,
+        aspect_ratio: 2,
+        duration: 0.5s,
+        direction: alternate,
+        url_start: '../img/portraits/tronte-child/tronte-child_',
+        url_end: '.webp'
+    ),
+    tronte: (
+        amount: 13,
+        aspect_ratio: 2,
+        duration: 0.5s,
+        direction: alternate,
+        url_start: '../img/portraits/tronte/tronte_',
+        url_end: '.webp'
+    ),
+    tronte-old: (
+        amount: 12,
+        aspect_ratio: 2,
+        duration: 0.5s,
+        direction: alternate,
+        url_start: '../img/portraits/tronte-old/tronte-old_',
+        url_end: '.webp'
+    ),
+    ines-teen: (
+        amount: 11,
+        aspect_ratio: 2,
+        duration: 0.45s,
+        direction: alternate,
+        url_start: '../img/portraits/ines-teen/ines-teen_',
+        url_end: '.webp'
+    ),
+    ines: (
+        amount: 10,
+        aspect_ratio: 2,
+        duration: 0.4s,
+        direction: alternate,
+        url_start: '../img/portraits/ines/ines_',
+        url_end: '.webp'
+    ),
+    ines-old: (
+        amount: 9,
+        aspect_ratio: 2,
+        duration: 0.4s,
+        direction: alternate,
+        url_start: '../img/portraits/ines-old/ines-old_',
+        url_end: '.webp'
+    ),
+    peter: (
+        amount: 8,
+        aspect_ratio: 2,
+        duration: 0.33s,
+        direction: alternate,
+        url_start: '../img/portraits/peter/peter_',
+        url_end: '.webp'
+    ),
+    doris: (
+        amount: 7,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/doris/doris_',
+        url_end: '.webp'
+    ),
+    agnes: (
+        amount: 6,
+        aspect_ratio: 2,
+        duration: 0.8s,
+        direction: alternate,
+        url_start: '../img/portraits/agnes/agnes_',
+        url_end: '.webp'
+    ),
+    greta: (
+        amount: 5,
+        aspect_ratio: 2,
+        duration: 0.2s,
+        direction: alternate,
+        url_start: '../img/portraits/greta/greta_',
+        url_end: '.webp'
+    ),
+    jonas: (
+        amount: 5,
+        aspect_ratio: 2,
+        duration: 0.4s,
+        direction: alternate,
+        url_start: '../img/portraits/jonas/jonas_',
+        url_end: '.webp'
+    ),
+    noah: (
+        amount: 67,
+        aspect_ratio: 2,
+        duration: 3s,
+        direction: alternate,
+        url_start: '../img/portraits/noah/noah_',
+        url_end: '.webp'
+    )
+);
+
+@function backgroundImage($url_start, $url_end, $total) {
+    $bg_image_value: "";
+
+    @for $i from 1 through $total {
+        $separator: ", ";
+
+        @if $i==1 {
+            $separator: "";
+        }
+
+        $bg_image_value: $bg_image_value+$separator+url($url_start + $i + $url_end);
+    }
+
+    @return unquote($bg_image_value);
+}
+
+@function backgroundPosition($iteration, $total) {
+    $current_frame_value: "";
+    $bg_size_value: $current_frame_value;
+
+    @for $i from 1 through $total {
+        @if $i==$iteration {
+            $current_frame_value: 50%;
+        }
+
+        @else {
+            $current_frame_value: -1000%;
+        }
+
+        $separator: ",";
+
+        @if $i==1 {
+            $separator: "";
+        }
+
+        $bg_size_value: $bg_size_value+$separator+$current_frame_value;
+    }
+
+    @return unquote($bg_size_value);
+}
+
+// CREATE ANIMATION
+@each $anim_id,
+$anim_data in $video_frames {
+    $amount_of_frames: map-get($anim_data, amount);
+
+    // CREATE ANIMATION
+    @keyframes #{$anim_id} {
+        @for $i from 1 through $amount_of_frames {
+            #{$i*100/$amount_of_frames + unquote('%')} {
+                background-position: backgroundPosition($i, $amount_of_frames);
+            }
+        }
+    }
+
+    // CSS DECLARATION OF EACH ANIMATION
+    ##{$anim_id} {
+        position: relative;
+        display: flex;
+        width: 100%;
+        background-color: red;
+        overflow: hidden;
+        
+        // ASPECT RATIO
+        // Old method
+        aspect-ratio: map-get($anim_data, aspect_ratio);
+        
+        // ASPECT RATIO
+        // Old method
+        // &::before {
+        //     content: "";
+        //     padding-top: unquote(100 / map-get($anim_data, aspect_ratio) + "%");
+        //     float: left;
+        // }
+
+        // ANIMATION CONTAINER
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 111.5%;
+            height: 111.5%;
+            transition: none;
+            animation-name: $anim_id;
+            animation-timing-function: step-start;
+            animation-duration: map-get($anim_data, duration);
+            animation-iteration-count: infinite;
+            animation-direction: map-get($anim_data, direction);
+            background-size: 90%;
+            background-repeat: no-repeat;
+            background-image: backgroundImage(map-get($anim_data, url_start),
+                    map-get($anim_data, url_end),
+                    map-get($anim_data, amount));
+        }
+    }
+}
