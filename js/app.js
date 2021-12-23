@@ -9,7 +9,8 @@ let app = {
         el_icon_fs_enter: document.getElementById('app_icon_fs_enter'),
         el_icon_fs_exit: document.getElementById('app_icon_fs_exit'),
         el_fullscreen: document.getElementById('app_fullscreen'),
-        isFullscreen: false
+        isFullscreen: false,
+        songs: ['audio/first.mp3', 'audio/second.mp3', 'audio/third.mp3']
     },
     audioConsentModal: function(cmd) {
         if (this.defaults.el_audio_consent_modal !== null) {
@@ -23,18 +24,45 @@ let app = {
             }
         }
     },
+    nextSong: function() {
+        // Pause
+        this.pauseAudio();
+        // Get current
+        const current_song = app.defaults.el_audio_player.getAttribute('src');
+        const last_song = app.defaults.songs[app.defaults.songs.length - 1];
+        if (current_song != last_song) {
+            const current_index = app.defaults.songs.indexOf(current_song);
+            const next_index = current_index + 1;
+            const next_song = app.defaults.songs[next_index];
+            app.defaults.el_audio_player.setAttribute('src', next_song);
+            app.defaults.el_audio_player.load();
+            this.playAudio();
+        } else {
+            const first_song = app.defaults.songs[0];
+            app.defaults.el_audio_player.setAttribute('src', first_song);
+            app.defaults.el_audio_player.load();
+            console.log('reset');
+        }
+    },
+    playAudio: function() {
+        this.defaults.el_audio_player.play();
+        this.defaults.el_play_pause_button.innerHTML = '<span class="c-shape m-pause"></span>';
+        this.defaults.el_play_pause_button.setAttribute('title', '[PAUSE] soundtrack');
+        window.app_audio_player_paused = false;
+        console.log('playing '+this.defaults.el_audio_player.src);
+    },
+    pauseAudio: function() {
+        this.defaults.el_audio_player.pause();
+        this.defaults.el_play_pause_button.innerHTML = '<span class="c-shape m-play"></span>';
+        this.defaults.el_play_pause_button.setAttribute('title', '[PLAY] soundtrack');
+        window.app_audio_player_paused = true;
+    },
     playPauseAudio: function() {
         if (this.defaults.el_audio_player !== null && this.defaults.el_play_pause_button !== null) {
             if (this.defaults.el_audio_player.paused) {
-                this.defaults.el_audio_player.play();
-                this.defaults.el_play_pause_button.innerHTML = '<span class="c-shape m-pause"></span>';
-                this.defaults.el_play_pause_button.setAttribute('title', '[PAUSE] soundtrack');
-                window.app_audio_player_paused = false;
+                this.playAudio();
             } else {
-                this.defaults.el_audio_player.pause();
-                this.defaults.el_play_pause_button.innerHTML = '<span class="c-shape m-play"></span>';
-                this.defaults.el_play_pause_button.setAttribute('title', '[PLAY] soundtrack');
-                window.app_audio_player_paused = true;
+                this.pauseAudio();
             }
         }
     },
