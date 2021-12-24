@@ -1,0 +1,16 @@
+---
+---
+@import 'third-parties/css-frames';
+// PURE CSS VIDEO FRAMES
+$video_frames: (
+    peter: (
+        index_start: 1,
+        index_end: 8,
+        aspect_ratio: 2,
+        duration: 0.33s,
+        direction: alternate,
+        url_start: '../img/portraits/peter/peter_',
+        url_end: '.webp'
+    )
+);
+@include css-frames($video_frames);

@@ -1,5 +1,101 @@
 const story = {
     scenes: {
+        'grottes-a': {
+            layout: 'fourth',
+            data: {}
+        },
+        'grottes-c': {
+            layout: 'fourth',
+            data: {}
+        },
+        'particles-a': {
+            layout: 'fourth',
+            data: {}
+        },
+        'particles-b': {
+            layout: 'fourth',
+            data: {}
+        },
+        'particles-c': {
+            layout: 'fourth',
+            data: {}
+        },
+        'particles-d': {
+            layout: 'fourth',
+            data: {}
+        },
+        'particles-e': {
+            layout: 'fourth',
+            data: {}
+        },
+        'machine-b': {
+            layout: 'fourth',
+            data: {}
+        },
+        'machine-c': {
+            layout: 'fourth',
+            data: {}
+        },
+        'foret-noa': {
+            layout: 'fourth',
+            data: {}
+        },
+        'route-a': {
+            layout: 'fourth',
+            data: {}
+        },
+        'route-c': {
+            layout: 'fourth',
+            data: {}
+        },
+        'blast': {
+            layout: 'fourth',
+            data: {}
+        },
+        'claudia-futur-b': {
+            layout: 'fourth',
+            data: {}
+        },
+        'adam-a': {
+            layout: 'fourth',
+            data: {}
+        },
+        'st-christophe-c': {
+            layout: 'fourth',
+            data: {}
+        },
+        'matter-c': {
+            layout: 'fourth',
+            data: {}
+        },
+        'matter-e': {
+            layout: 'fourth',
+            data: {}
+        },
+        'matter-f': {
+            layout: 'fourth',
+            data: {}
+        },
+        'matter-l': {
+            layout: 'fourth',
+            data: {}
+        },
+        'matter-g': {
+            layout: 'fourth',
+            data: {}
+        },
+        'matter-j': {
+            layout: 'fourth',
+            data: {}
+        },
+        'wormhole-a': {
+            layout: 'fourth',
+            data: {}
+        },
+        'wormhole-c': {
+            layout: 'fourth',
+            data: {}
+        },
         'opening-credits-a': {
             layout: 'first',
             data: {
@@ -80,426 +176,330 @@ const story = {
             layout: 'second',
             data: {}
         },
-        'grottes-a': {
-            layout: 'first',
-            data: {}
-        },
-        'grottes-c': {
-            layout: 'first',
-            data: {}
-        },
-        'foret-noa': {
-            layout: 'first',
-            data: {}
-        },
-        'route-a': {
-            layout: 'second',
-            data: {}
-        },
-        'route-c': {
-            layout: 'second',
-            data: {}
-        },
-        'blast': {
-            layout: 'second',
-            data: {}
-        },
-        'claudia-futur-b': {
-            layout: 'second',
-            data: {}
-        },
-        'machine-b': {
-            layout: 'second',
-            data: {}
-        },
-        'machine-c': {
-            layout: 'second',
-            data: {}
-        },
-        'particles-a': {
-            layout: 'second',
-            data: {}
-        },
-        'particles-b': {
-            layout: 'second',
-            data: {}
-        },
-        'particles-c': {
-            layout: 'second',
-            data: {}
-        },
-        'particles-d': {
-            layout: 'second',
-            data: {}
-        },
-        'particles-e': {
-            layout: 'second',
-            data: {}
-        },
-        'adam-a': {
-            layout: 'second',
-            data: {}
-        },
-        'st-christophe-c': {
-            layout: 'second',
-            data: {}
-        },
-        'matter-c': {
-            layout: 'second',
-            data: {}
-        },
-        'matter-e': {
-            layout: 'second',
-            data: {}
-        },
-        'matter-f': {
-            layout: 'second',
-            data: {}
-        },
-        'matter-l': {
-            layout: 'second',
-            data: {}
-        },
-        'matter-g': {
-            layout: 'second',
-            data: {}
-        },
-        'matter-j': {
-            layout: 'second',
-            data: {}
-        },
-        'wormhole-a': {
-            layout: 'second',
-            data: {}
-        },
-        'wormhole-c': {
-            layout: 'second',
-            data: {}
-        },
         'jonas-teen': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Jonas Kahnwald',
                 second: 'Louis Hofmann'
             }
         },
         'martha-teen': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Martha Nielsen',
                 second: 'Lisa Vicari'
             }
         },
         'bartosz': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Bartosz Tiedemann',
                 second: 'Paul Lux'
             }
         },
         'magnus': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Magnus Nielson',
                 second: 'Moritz Jahn'
             }
         },
         'franziska': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Franziska Doppler',
                 second: 'Gina Stiebitz'
             }
         },
         'elisabeth': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Elisabeth Doppler',
                 second: 'Carlotta von Falkenhayn'
             }
         },
         'mikkel': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Mikkel Nielsen',
                 second: 'Daan Lennard Liebrenz'
             }
         },
         'michael': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Michael Kahnwald',
                 second: 'Sebastian Rudolph'
             }
         },
         'hannah-child': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Hannah Kahnwald',
                 second: 'Ella Lee'
             }
         },
         'hannah': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Hannah Kahnwald',
                 second: 'Maja Schöne'
             }
         },
         'ulrich': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Ulrich Nielsen',
                 second: 'Oliver Masucci'
             }
         },
         'ulrich-teen': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Ulrich Nielsen',
                 second: 'Ludger Bökelmann'
             }
         },
         'katharina-teen': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Katharina Nielsen',
                 second: 'Nele Trebs'
             }
         },
         'katharina': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Katharina Nielsen',
                 second: 'Jördis Triebel'
             }
         },
         'charlotte-teen': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Charlotte Doppler',
                 second: 'Stephanie Amarell'
             }
         },
         'charlotte': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Charlotte Doppler',
                 second: 'Karoline Eichhorn'
             }
         },
         'aleksander-teen': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Aleksander Tiedemann',
                 second: 'Béla Gabor Lenz'
             }
         },
         'aleksander': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Aleksander Tiedemann',
                 second: 'Peter Benedict'
             }
         },
         'regina-teen': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Regina Tiedemann',
                 second: 'Lydia Maria Makrides'
             }
         },
         'regina': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Regina Tiedemann',
                 second: 'Deborah Kaufmann'
             }
         },
         'claudia-child': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Claudia Tiedemann',
                 second: 'Gwendolyn Göbel'
             }
         },
         'claudia': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Claudia Tiedemann',
                 second: 'Julika Jenkins'
             }
         },
         'claudia-old': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Claudia Tiedemann',
                 second: 'Lisa Kreuzer'
             }
         },
         'helge-child': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Helge Doppler',
                 second: 'Tom Philipp'
             }
         },
         'helge': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Helge Doppler',
                 second: 'Peter Schneider'
             }
         },
         'helge-old': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Helge Doppler',
                 second: 'Hermann Beyer'
             }
         },
         'tannhaus': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'H.G. Tannhaus',
                 second: 'Arnd Klawitter'
             }
         },
         'tannhaus-old': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'H.G. Tannhaus',
                 second: 'Christian Steyer'
             }
         },
         'bernd': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Bernd Doppler',
                 second: 'Anatole Taubman'
             }
         },
         'bernd-old': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Bernd Doppler',
                 second: 'Michael Mendl'
             }
         },
         'jana-teen': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Jana Nielsen',
                 second: 'Rike Sindler'
             }
         },
         'jana': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Jana Nielsen',
                 second: 'Anne Lebinsky'
             }
         },
         'jana-old': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Jana Nielsen',
                 second: 'Tatja Seibt'
             }
         },
         'egon': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Egon Tiedemann',
                 second: 'Sebastian Hülk'
             }
         },
         'egon-old': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Egon Tiedemann',
                 second: 'Christian Pätzold'
             }
         },
         'tronte-child': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Tronte Nielsen',
                 second: 'Joshio Marlon'
             }
         },
         'tronte': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Tronte Nielsen',
                 second: 'Felix Kramer'
             }
         },
         'tronte-old': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Tronte Nielsen',
                 second: 'Walter Kreye'
             }
         },
         'ines-teen': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Ines Kahnwald',
                 second: 'Lena Urzendowsky'
             }
         },
         'ines': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Ines Kahnwald',
                 second: 'Anne Ratte-Polle'
             }
         },
         'ines-old': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Ines Kahnwald',
                 second: 'Angela Winkler'
             }
         },
         'peter': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Peter Doppler',
                 second: 'Stephan Kampwirth'
             }
         },
         'doris': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Doris Tiedemann',
                 second: 'Luise Heyer'
             }
         },
         'agnes': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Agnes Nielsen',
                 second: 'Antje Traue'
             }
         },
         'greta': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Greta Doppler',
                 second: 'Cordelia Wege'
             }
         },
         'jonas': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'L\'Étranger',
                 second: 'Andreas Pietschmann'
             }
         },
         'noah': {
-            layout: 'thrid',
+            layout: 'third',
             data: {
                 first: 'Noah',
                 second: 'Mark Waschke'
@@ -542,24 +542,31 @@ const story = {
             markup += story.includes.dark_split_text(data.scene_data);
             markup += story.includes.navigation_alt(data.scene_current_id);
             return markup;
+        },
+        fourth: function(data) {
+            let markup = story.includes.css_video_frames(data.scene_current_id);
+            markup += story.includes.dark_title();
+            markup += story.includes.navigation_alt(data.scene_current_id);
+            markup += story.includes.onboarding_scroll();
+            return markup;
         }
     },
     includes: {
         navigation: function(current_scene_id) {
             return `
-                <nav class="c-position m-relative m-botttom-xxl u-pb-xxl m-left-0 c-grid m-center m-nowrap u-w-100" role="navigation">
-                    <a href="scene.html?scene=${story.getPreviousSceneId(current_scene_id)}" id="app_prev_scene" class="c-btn m-thin m-transparent c-effect m-span-180-core m-span-180-rotate" u-p-sm="sm" u-fs-xs="sm" title="Previous scene">
-                        <span class="u-ml-xxs u-mr-xxs">P</span><span class="u-ml-xxs u-mr-xxs">r</span><span class="u-ml-xxs u-mr-xxs">e</span><span class="u-ml-xxs u-mr-xxs">v</span><span class="u-ml-xxs u-mr-xxs">i</span><span class="u-ml-xxs u-mr-xxs">o</span><span class="u-ml-xxs u-mr-xxs">u</span><span class="u-ml-xxs u-mr-xxs">s</span>
-                    </a>
-                    <a href="scene.html?scene=${story.getNextSceneId(current_scene_id)}" id="app_next_scene" class="c-btn m-thin c-effect m-span-180-core m-span-180-rotate" u-p-sm="sm" u-fs-xs="sm" title="Next scene">
-                        <span class="u-ml-xxs u-mr-xxs">N</span><span class="u-ml-xxs u-mr-xxs">e</span><span class="u-ml-xxs u-mr-xxs">x</span><span class="u-ml-xxs u-mr-xxs">t</span>
-                    </a>
-                </nav>
+            <nav class="c-position m-fixed m-bottom-xxl m-left-0 c-grid m-center m-nowrap u-w-100" role="navigation">
+                <a href="scene.html?scene=${story.getPreviousSceneId(current_scene_id)}" id="app_prev_scene" class="c-btn m-thin m-transparent c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Previous scene">
+                    <span><span class="c-shape m-chevron-left"></span></span>
+                </a>
+                <a href="scene.html?scene=${story.getNextSceneId(current_scene_id)}" id="app_next_scene" class="c-btn m-thin c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Next scene">
+                    <span><span class="c-shape m-chevron-right"></span></span>
+                </a>
+            </nav>
             `;
         },
         navigation_alt: function(current_scene_id) {
             return `
-                <nav class="c-position m-relative m-botttom-xxl m-left-0 c-grid m-center m-nowrap u-w-100 u-bg-gradient-vertical u-pb-xxl" role="navigation">
+                <nav class="c-position m-relative c-grid m-center m-nowrap u-w-100 u-bg-gradient-vertical u-pb-xxl" role="navigation">
                     <a href="scene.html?scene=${story.getPreviousSceneId(current_scene_id)}" id="app_prev_scene" class="c-btn m-thin m-transparent c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Previous scene">
                         <span><span class="c-shape m-chevron-left"></span></span>
                     </a>
@@ -638,10 +645,14 @@ const story = {
         },
         css_video_frames: function(id) {
             return `
+                <link rel="stylesheet" href="css/${id}.css">
                 <div class="c-grid c-position m-fixed m-middle-center m-anchor-middle-center">
                     <div id="${id}" class="u-minh-100vh u-minw-100vw"></div>
                 </div>
                 <div class="c-position m-fixed m-top-0 u-w-100 u-h-100vh u-bc-primary-rev u-pe-none u-faded u-bg-stripes"></div>
+                <div id="app_screen_height" class="u-h-100vh"></div>
+                <div id="app_scene_detector"></div>
+                <div id="app_screen_height" class="u-h-100vh"></div>
             `
         }
     },

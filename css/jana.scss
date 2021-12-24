@@ -1,0 +1,16 @@
+---
+---
+@import 'third-parties/css-frames';
+// PURE CSS VIDEO FRAMES
+$video_frames: (
+    jana: (
+        index_start: 1,
+        index_end: 18,
+        aspect_ratio: 2,
+        duration: 0.76s,
+        direction: alternate,
+        url_start: '../img/portraits/jana/jana_',
+        url_end: '.webp'
+    )
+);
+@include css-frames($video_frames);

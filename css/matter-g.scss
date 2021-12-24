@@ -1,0 +1,16 @@
+---
+---
+@import 'third-parties/css-frames';
+// PURE CSS VIDEO FRAMES
+$video_frames: (
+    matter-g: (
+        index_start: 1,
+        index_end: 151,
+        aspect_ratio: 2,
+        duration: 9s,
+        direction: alternate,
+        url_start: '../img/matter-g/matter-g-',
+        url_end: '.webp'
+    )
+);
+@include css-frames($video_frames);

@@ -1,0 +1,16 @@
+---
+---
+@import 'third-parties/css-frames';
+// PURE CSS VIDEO FRAMES
+$video_frames: (
+    machine-b: (
+        index_start: 1,
+        index_end: 75,
+        aspect_ratio: 2,
+        duration: 4s,
+        direction: alternate,
+        url_start: '../img/machine-b/machine-b-',
+        url_end: '.webp'
+    )
+);
+@include css-frames($video_frames);

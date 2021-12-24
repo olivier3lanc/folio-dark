@@ -1,0 +1,16 @@
+---
+---
+@import 'third-parties/css-frames';
+// PURE CSS VIDEO FRAMES
+$video_frames: (
+    franziska: (
+        index_start: 1,
+        index_end: 24,
+        aspect_ratio: 2,
+        duration: 1s,
+        direction: alternate,
+        url_start: '../img/portraits/franziska/franziska_',
+        url_end: '.webp'
+    )
+);
+@include css-frames($video_frames);

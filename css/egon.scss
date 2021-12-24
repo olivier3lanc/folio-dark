@@ -1,0 +1,16 @@
+---
+---
+@import 'third-parties/css-frames';
+// PURE CSS VIDEO FRAMES
+$video_frames: (
+    egon: (
+        index_start: 1,
+        index_end: 16,
+        aspect_ratio: 2,
+        duration: 0.6s,
+        direction: alternate,
+        url_start: '../img/portraits/egon/egon_',
+        url_end: '.webp'
+    )
+);
+@include css-frames($video_frames);

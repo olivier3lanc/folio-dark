@@ -1,0 +1,16 @@
+---
+---
+@import 'third-parties/css-frames';
+// PURE CSS VIDEO FRAMES
+$video_frames: (
+    bernd-old: (
+        index_start: 1,
+        index_end: 20,
+        aspect_ratio: 2,
+        duration: 0.85s,
+        direction: alternate,
+        url_start: '../img/portraits/bernd-old/bernd-old_',
+        url_end: '.webp'
+    )
+);
+@include css-frames($video_frames);

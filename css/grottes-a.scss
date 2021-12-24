@@ -1,0 +1,16 @@
+---
+---
+@import 'third-parties/css-frames';
+// PURE CSS VIDEO FRAMES
+$video_frames: (
+    grottes-a: (
+        index_start: 1,
+        index_end: 98,
+        aspect_ratio: 2,
+        duration: 4s,
+        direction: alternate,
+        url_start: '../img/grottes-a/grottes-a-',
+        url_end: '.webp'
+    )
+);
+@include css-frames($video_frames);

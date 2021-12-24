@@ -1,0 +1,16 @@
+---
+---
+@import 'third-parties/css-frames';
+// PURE CSS VIDEO FRAMES
+$video_frames: (
+    wormhole-c: (
+        index_start: 1,
+        index_end: 88,
+        aspect_ratio: 2,
+        duration: 5s,
+        direction: alternate,
+        url_start: '../img/wormhole-c/wormhole-c-',
+        url_end: '.webp'
+    )
+);
+@include css-frames($video_frames);
