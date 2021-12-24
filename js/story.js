@@ -527,18 +527,20 @@ const story = {
             let markup = story.includes.scroll_frames('json/'+data.scene_current_id+'.json');
             markup += story.includes.dark_split_text(data.scene_data);
             markup += story.includes.navigation_alt(data.scene_current_id);
+            markup += story.includes.onboarding_scroll();
             return markup;
         },
         second: function(data) {
             let markup = story.includes.scroll_frames('json/'+data.scene_current_id+'.json');
             markup += story.includes.dark_title();
-            markup += story.includes.navigation(data.scene_current_id);
+            markup += story.includes.navigation_alt(data.scene_current_id);
+            markup += story.includes.onboarding_scroll();
             return markup;
         },
         third: function(data) {
             let markup = story.includes.css_video_frames(data.scene_current_id);
             markup += story.includes.dark_split_text(data.scene_data);
-            markup += story.includes.navigation(data.scene_current_id);
+            markup += story.includes.navigation_alt(data.scene_current_id);
             return markup;
         }
     },
@@ -566,6 +568,19 @@ const story = {
                     </a>
                 </nav>
             `;
+        },
+        onboarding_scroll: function() {
+            return `
+                <div class="c-position m-fixed m-middle-center m-anchor-top-center u-ta-center u-mt-xl"
+                    scroll-btween="app_scene_onboarding_mouse"
+                    scroll-btween-detector="app_scene_detector" 
+                    data-opacity="|0:1 to 10:1 to 15:0 to 100:0|">
+                    <div class="c-grid m-center m-middle">
+                        <span class="c-shape m-mouse u-fs-md"></span>    
+                    </div>
+                    <p class="u-fs-xs u-m-none u-ff-lead u-c-primary-max">Scroll down</p>
+                </div>
+            `
         },
         scroll_frames: function(jsonURL) {
             return `
