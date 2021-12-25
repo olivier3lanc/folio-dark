@@ -1,181 +1,5 @@
 const story = {
     scenes: {
-        'grottes-a': {
-            layout: 'fourth',
-            data: {}
-        },
-        'grottes-c': {
-            layout: 'fourth',
-            data: {}
-        },
-        'particles-a': {
-            layout: 'fourth',
-            data: {}
-        },
-        'particles-b': {
-            layout: 'fourth',
-            data: {}
-        },
-        'particles-c': {
-            layout: 'fourth',
-            data: {}
-        },
-        'particles-d': {
-            layout: 'fourth',
-            data: {}
-        },
-        'particles-e': {
-            layout: 'fourth',
-            data: {}
-        },
-        'machine-b': {
-            layout: 'fourth',
-            data: {}
-        },
-        'machine-c': {
-            layout: 'fourth',
-            data: {}
-        },
-        'foret-noa': {
-            layout: 'fourth',
-            data: {}
-        },
-        'route-a': {
-            layout: 'fourth',
-            data: {}
-        },
-        'route-c': {
-            layout: 'fourth',
-            data: {}
-        },
-        'blast': {
-            layout: 'fourth',
-            data: {}
-        },
-        'claudia-futur-b': {
-            layout: 'fourth',
-            data: {}
-        },
-        'adam-a': {
-            layout: 'fourth',
-            data: {}
-        },
-        'st-christophe-c': {
-            layout: 'fourth',
-            data: {}
-        },
-        'matter-c': {
-            layout: 'fourth',
-            data: {}
-        },
-        'matter-e': {
-            layout: 'fourth',
-            data: {}
-        },
-        'matter-f': {
-            layout: 'fourth',
-            data: {}
-        },
-        'matter-l': {
-            layout: 'fourth',
-            data: {}
-        },
-        'matter-g': {
-            layout: 'fourth',
-            data: {}
-        },
-        'matter-j': {
-            layout: 'fourth',
-            data: {}
-        },
-        'wormhole-a': {
-            layout: 'fourth',
-            data: {}
-        },
-        'wormhole-c': {
-            layout: 'fourth',
-            data: {}
-        },
-        'opening-credits-a': {
-            layout: 'first',
-            data: {
-                first: 'sic mundus',
-                second: 'creatus est'
-            }
-        },
-        'opening-credits-b': {
-            layout: 'first',
-            data: {
-                first: 'The question is not where',
-                second: 'but when'
-            }
-        },
-        'opening-credits-d': {
-            layout: 'first',
-            data: {
-                first: 'Der Anfang ist das Ende',
-                second: 'Das Ende ist der Anfang'
-            }
-        },
-        'opening-credits-e': {
-            layout: 'first',
-            data: {
-                first: 'Alles ist',
-                second: 'miteinander verbunden'
-            }
-        },
-        'opening-credits-g': {
-            layout: 'first',
-            data: {}
-        },
-        'opening-credits-h': {
-            layout: 'second',
-            data: {}
-        },
-        'opening-credits-i': {
-            layout: 'first',
-            data: {}
-        },
-        'opening-credits-j': {
-            layout: 'first',
-            data: {}
-        },
-        'opening-credits-l': {
-            layout: 'first',
-            data: {}
-        },
-        'opening-credits-m': {
-            layout: 'first',
-            data: {}
-        },
-        'opening-credits-n': {
-            layout: 'second',
-            data: {}
-        },
-        'opening-credits-o': {
-            layout: 'first',
-            data: {}
-        },
-        'opening-credits-q': {
-            layout: 'first',
-            data: {}
-        },
-        'opening-credits-r': {
-            layout: 'first',
-            data: {}
-        },
-        'opening-credits-s': {
-            layout: 'first',
-            data: {}
-        },
-        'opening-credits-u': {
-            layout: 'first',
-            data: {}
-        },
-        'opening-credits-v': {
-            layout: 'second',
-            data: {}
-        },
         'jonas-teen': {
             layout: 'third',
             data: {
@@ -504,6 +328,182 @@ const story = {
                 first: 'Noah',
                 second: 'Mark Waschke'
             }
+        },
+        'grottes-a': {
+            layout: 'fourth',
+            data: {}
+        },
+        'grottes-c': {
+            layout: 'fourth',
+            data: {}
+        },
+        'particles-a': {
+            layout: 'fourth',
+            data: {}
+        },
+        'particles-b': {
+            layout: 'fourth',
+            data: {}
+        },
+        'particles-c': {
+            layout: 'fourth',
+            data: {}
+        },
+        'particles-d': {
+            layout: 'fourth',
+            data: {}
+        },
+        'particles-e': {
+            layout: 'fourth',
+            data: {}
+        },
+        'machine-b': {
+            layout: 'fourth',
+            data: {}
+        },
+        'machine-c': {
+            layout: 'fourth',
+            data: {}
+        },
+        'foret-noa': {
+            layout: 'fourth',
+            data: {}
+        },
+        'route-a': {
+            layout: 'fourth',
+            data: {}
+        },
+        'route-c': {
+            layout: 'fourth',
+            data: {}
+        },
+        'blast': {
+            layout: 'fourth',
+            data: {}
+        },
+        'claudia-futur-b': {
+            layout: 'fourth',
+            data: {}
+        },
+        'adam-a': {
+            layout: 'fourth',
+            data: {}
+        },
+        'st-christophe-c': {
+            layout: 'fourth',
+            data: {}
+        },
+        'matter-c': {
+            layout: 'fourth',
+            data: {}
+        },
+        'matter-e': {
+            layout: 'fourth',
+            data: {}
+        },
+        'matter-f': {
+            layout: 'fourth',
+            data: {}
+        },
+        'matter-l': {
+            layout: 'fourth',
+            data: {}
+        },
+        'matter-g': {
+            layout: 'fourth',
+            data: {}
+        },
+        'matter-j': {
+            layout: 'fourth',
+            data: {}
+        },
+        'wormhole-a': {
+            layout: 'fourth',
+            data: {}
+        },
+        'wormhole-c': {
+            layout: 'fourth',
+            data: {}
+        },
+        'opening-credits-a': {
+            layout: 'first',
+            data: {
+                first: 'sic mundus',
+                second: 'creatus est'
+            }
+        },
+        'opening-credits-b': {
+            layout: 'first',
+            data: {
+                first: 'The question is not where',
+                second: 'but when'
+            }
+        },
+        'opening-credits-d': {
+            layout: 'first',
+            data: {
+                first: 'Der Anfang ist das Ende',
+                second: 'Das Ende ist der Anfang'
+            }
+        },
+        'opening-credits-e': {
+            layout: 'first',
+            data: {
+                first: 'Alles ist',
+                second: 'miteinander verbunden'
+            }
+        },
+        'opening-credits-g': {
+            layout: 'first',
+            data: {}
+        },
+        'opening-credits-h': {
+            layout: 'second',
+            data: {}
+        },
+        'opening-credits-i': {
+            layout: 'first',
+            data: {}
+        },
+        'opening-credits-j': {
+            layout: 'first',
+            data: {}
+        },
+        'opening-credits-l': {
+            layout: 'first',
+            data: {}
+        },
+        'opening-credits-m': {
+            layout: 'first',
+            data: {}
+        },
+        'opening-credits-n': {
+            layout: 'second',
+            data: {}
+        },
+        'opening-credits-o': {
+            layout: 'first',
+            data: {}
+        },
+        'opening-credits-q': {
+            layout: 'first',
+            data: {}
+        },
+        'opening-credits-r': {
+            layout: 'first',
+            data: {}
+        },
+        'opening-credits-s': {
+            layout: 'first',
+            data: {}
+        },
+        'opening-credits-u': {
+            layout: 'first',
+            data: {}
+        },
+        'opening-credits-v': {
+            layout: 'second',
+            data: {}
         }
     },
     getNextSceneId: function(current_scene_id) {
@@ -541,6 +541,7 @@ const story = {
             let markup = story.includes.css_video_frames(data.scene_current_id);
             markup += story.includes.dark_split_text(data.scene_data);
             markup += story.includes.navigation_alt(data.scene_current_id);
+            markup += story.includes.onboarding_scroll();
             return markup;
         },
         fourth: function(data) {
@@ -578,14 +579,19 @@ const story = {
         },
         onboarding_scroll: function() {
             return `
-                <div class="c-position m-fixed m-middle-center m-anchor-top-center u-ta-center u-mt-xl"
+                <div class="c-position m-fixed m-middle-center m-anchor-top-center c-grid m-nowrap m-baseline u-ta-center u-mt-xl"
                     scroll-btween="app_scene_onboarding_mouse"
                     scroll-btween-detector="app_scene_detector" 
-                    data-opacity="|0:1 to 10:1 to 15:0 to 100:0|">
-                    <div class="c-grid m-center m-middle">
-                        <span class="c-shape m-mouse u-fs-md"></span>    
+                    data-opacity="|0:1 to 15:0 to 100:0|"
+                    u-mt-md="sm">
+                    <div class="c-spacing m-w-6 u-p-xxs">
+                        <span class="c-shape m-mouse u-fs-xl" u-fs-lg="sm"></span> 
+                        <p class="u-fs-xs u-m-none u-ff-lead u-c-primary-max u-lh-1">Scroll down</p>
                     </div>
-                    <p class="u-fs-xs u-m-none u-ff-lead u-c-primary-max">Scroll down</p>
+                    <div class="c-spacing m-w-6 u-p-xxs u-orient-portrait" u-none="md,xl">
+                        <span class="c-shape m-orientation-landscape u-fs-xl" u-fs-lg="sm"></span> 
+                        <p class="u-fs-xs u-m-none u-ff-lead u-c-primary-max u-lh-1">Landscape orientation recommended</p>
+                    </div>
                 </div>
             `
         },
@@ -636,10 +642,19 @@ const story = {
         dark_split_text: function(data) {
             return `
                 <h1 id="app_dark_text_split"
-                    class="c-spacing m-w-10 c-position m-fixed m-middle-center m-anchor-middle-center u-m-none u-ff-lead-alt u-fw-100 u-fs-md u-tt-uppercase u-lsp-xlarge u-ta-center u-lh-smooth"
+                    class="c-spacing m-w-10 c-position m-fixed m-middle-center m-anchor-middle-center u-m-none u-ff-lead-alt u-fw-100 u-fs-md u-tt-uppercase u-ta-center u-lh-smooth"
                     u-fs-xs="sm"
                     u-fs-sm="md">
-                    <span class="u-c-primary-max u-ml-xs u-mr-xs u-ws-nowrap">${data.first}</span> <span class="u-c-primary u-mr-xs u-ml-xs u-ws-nowrap">${data.second}</span>
+                        <span   class="u-c-primary-max u-ml-xs u-mr-xs u-ws-nowrap"
+                                scroll-btween="letter_spacing_1"
+                                scroll-btween-detector="app_scene_detector"
+                                data-letter-spacing="|0.2 to 0.5|em"
+                                data-opacity="|0:0.6 to 30:1 to 100:1|">${data.first}</span> 
+                        <span   class="u-c-primary u-mr-xs u-ml-xs u-ws-nowrap"
+                                scroll-btween="letter_spacing_2"
+                                scroll-btween-detector="app_scene_detector"
+                                data-letter-spacing="|0.2 to 0.5|em"
+                                data-opacity="|0:0.6 to 30:1 to 100:1|">${data.second}</span>
                 </h1>
             `
         },

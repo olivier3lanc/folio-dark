@@ -96,6 +96,25 @@ hr {
     }
 }
 
+@keyframes rotate_90cw {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    80% {
+        transform: rotate(90deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}
+
 @keyframes bottom_to_top {
     from {
         top: 100%;
@@ -136,3 +155,14 @@ hr {
     }
 }
 
+
+@media screen and (orientation:portrait) {
+    .u-orient-landscape {
+        display: none !important;
+    }
+}
+@media screen and (orientation:landscape) {
+    .u-orient-portrait {
+        display: none !important;
+    }
+}

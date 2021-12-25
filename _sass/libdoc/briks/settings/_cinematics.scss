@@ -107,7 +107,7 @@ Y88b  d88P Y88b.    888    Y8b.     Y8b.     888  888           X88 888  d88P   
 */
 $briks-screen-sizes: (
     sm: 0,
-    md: 768,
+    md: 960,
     xl: 1440
 );
 
@@ -1014,8 +1014,8 @@ $briks-components-generic: (
         ),
         modifiers: (
             mouse: (
-                width: 1em,
-                height: 1.8em,
+                width: 0.67em,
+                height: 1em,
                 border: my-border(thin-solid-primary-max),
                 border-radius: my-border-radius(max),
                 position: relative,
@@ -1024,14 +1024,33 @@ $briks-components-generic: (
                         content: '',
                         display: block,
                         position: absolute,
-                        width: 0.2em,
-                        height: 0.2em,
-                        top: 0.3em,
+                        width: 0.1em,
+                        height: 0.1em,
+                        top: 0.2em,
                         left: 50%,
                         animation: 0.7s linear 0s infinite alternate mousewheel,
                         transform: translateX(-50%) translateY(-50%),
                         background-color: my-color(primary-max),
                         border-radius: my-border-radius(max)
+                    )
+                )
+            ),
+            orientation-landscape: (
+                width: 0.67em,
+                height: 1em,
+                border: my-border(thin-solid-primary-max),
+                position: relative,
+                animation: 2s ease-in-out 0s infinite rotate_90cw,
+                pseudo-elements: (
+                    before: (
+                        content: '',
+                        display: block,
+                        position: absolute,
+                        width: 0.1em,
+                        height: 0.1em,
+                        bottom: 0.1em,
+                        left: calc(50% - 0.05em),
+                        background-color: my-color(primary-max)
                     )
                 )
             ),
