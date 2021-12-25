@@ -1,6 +1,30 @@
----
----
 [
-{% for i in (1..27) %}{ "url": "{{site.url}}{{site.baseurl}}/img/opening-credits-a/opening-credits-a-{{i}}.webp" }{% if forloop.last == false %},{% endif %}
-{% endfor %}
+{ "url": "img/opening-credits-a/opening-credits-a-1.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-2.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-3.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-4.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-5.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-6.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-7.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-8.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-9.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-10.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-11.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-12.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-13.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-14.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-15.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-16.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-17.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-18.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-19.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-20.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-21.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-22.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-23.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-24.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-25.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-26.webp" },
+{ "url": "img/opening-credits-a/opening-credits-a-27.webp" }
+
 ]

@@ -1,6 +1,43 @@
----
----
 [
-{% for i in (1..40) %}{ "url": "{{site.url}}{{site.baseurl}}/img/machine-a/machine-a-{{i}}.webp" }{% if forloop.last == false %},{% endif %}
-{% endfor %}
+{ "url": "img/machine-a/machine-a-1.webp" },
+{ "url": "img/machine-a/machine-a-2.webp" },
+{ "url": "img/machine-a/machine-a-3.webp" },
+{ "url": "img/machine-a/machine-a-4.webp" },
+{ "url": "img/machine-a/machine-a-5.webp" },
+{ "url": "img/machine-a/machine-a-6.webp" },
+{ "url": "img/machine-a/machine-a-7.webp" },
+{ "url": "img/machine-a/machine-a-8.webp" },
+{ "url": "img/machine-a/machine-a-9.webp" },
+{ "url": "img/machine-a/machine-a-10.webp" },
+{ "url": "img/machine-a/machine-a-11.webp" },
+{ "url": "img/machine-a/machine-a-12.webp" },
+{ "url": "img/machine-a/machine-a-13.webp" },
+{ "url": "img/machine-a/machine-a-14.webp" },
+{ "url": "img/machine-a/machine-a-15.webp" },
+{ "url": "img/machine-a/machine-a-16.webp" },
+{ "url": "img/machine-a/machine-a-17.webp" },
+{ "url": "img/machine-a/machine-a-18.webp" },
+{ "url": "img/machine-a/machine-a-19.webp" },
+{ "url": "img/machine-a/machine-a-20.webp" },
+{ "url": "img/machine-a/machine-a-21.webp" },
+{ "url": "img/machine-a/machine-a-22.webp" },
+{ "url": "img/machine-a/machine-a-23.webp" },
+{ "url": "img/machine-a/machine-a-24.webp" },
+{ "url": "img/machine-a/machine-a-25.webp" },
+{ "url": "img/machine-a/machine-a-26.webp" },
+{ "url": "img/machine-a/machine-a-27.webp" },
+{ "url": "img/machine-a/machine-a-28.webp" },
+{ "url": "img/machine-a/machine-a-29.webp" },
+{ "url": "img/machine-a/machine-a-30.webp" },
+{ "url": "img/machine-a/machine-a-31.webp" },
+{ "url": "img/machine-a/machine-a-32.webp" },
+{ "url": "img/machine-a/machine-a-33.webp" },
+{ "url": "img/machine-a/machine-a-34.webp" },
+{ "url": "img/machine-a/machine-a-35.webp" },
+{ "url": "img/machine-a/machine-a-36.webp" },
+{ "url": "img/machine-a/machine-a-37.webp" },
+{ "url": "img/machine-a/machine-a-38.webp" },
+{ "url": "img/machine-a/machine-a-39.webp" },
+{ "url": "img/machine-a/machine-a-40.webp" }
+
 ]

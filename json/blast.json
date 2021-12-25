@@ -1,6 +1,37 @@
----
----
 [
-{% for i in (1..34) %}{ "url": "{{site.url}}{{site.baseurl}}/img/blast/blast-{{i}}.webp" }{% if forloop.last == false %},{% endif %}
-{% endfor %}
+{ "url": "img/blast/blast-1.webp" },
+{ "url": "img/blast/blast-2.webp" },
+{ "url": "img/blast/blast-3.webp" },
+{ "url": "img/blast/blast-4.webp" },
+{ "url": "img/blast/blast-5.webp" },
+{ "url": "img/blast/blast-6.webp" },
+{ "url": "img/blast/blast-7.webp" },
+{ "url": "img/blast/blast-8.webp" },
+{ "url": "img/blast/blast-9.webp" },
+{ "url": "img/blast/blast-10.webp" },
+{ "url": "img/blast/blast-11.webp" },
+{ "url": "img/blast/blast-12.webp" },
+{ "url": "img/blast/blast-13.webp" },
+{ "url": "img/blast/blast-14.webp" },
+{ "url": "img/blast/blast-15.webp" },
+{ "url": "img/blast/blast-16.webp" },
+{ "url": "img/blast/blast-17.webp" },
+{ "url": "img/blast/blast-18.webp" },
+{ "url": "img/blast/blast-19.webp" },
+{ "url": "img/blast/blast-20.webp" },
+{ "url": "img/blast/blast-21.webp" },
+{ "url": "img/blast/blast-22.webp" },
+{ "url": "img/blast/blast-23.webp" },
+{ "url": "img/blast/blast-24.webp" },
+{ "url": "img/blast/blast-25.webp" },
+{ "url": "img/blast/blast-26.webp" },
+{ "url": "img/blast/blast-27.webp" },
+{ "url": "img/blast/blast-28.webp" },
+{ "url": "img/blast/blast-29.webp" },
+{ "url": "img/blast/blast-30.webp" },
+{ "url": "img/blast/blast-31.webp" },
+{ "url": "img/blast/blast-32.webp" },
+{ "url": "img/blast/blast-33.webp" },
+{ "url": "img/blast/blast-34.webp" }
+
 ]
