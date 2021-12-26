@@ -11,6 +11,7 @@ let app = {
         el_icon_fs_enter: document.getElementById('app_icon_fs_enter'),
         el_icon_fs_exit: document.getElementById('app_icon_fs_exit'),
         el_fullscreen: document.getElementById('app_fullscreen'),
+        el_effect_click: document.getElementById('app_effect_click'),
         isFullscreen: false,
         songs: {
             // Agnes Obel - Familiar (Lyric video) • DARK - S1 Soundtrack.mp4
@@ -112,7 +113,7 @@ let app = {
     },
     playAudio: function() {
         this.defaults.el_audio_player.play();
-        this.defaults.el_play_pause_button.innerHTML = '<span class="c-shape m-pause"></span>';
+        this.defaults.el_play_pause_button.innerHTML = '<span class="c-shape m-pause u-anim-fade-in"></span>';
         this.defaults.el_play_pause_button.setAttribute('title', '[PAUSE] soundtrack');
         window.app_audio_player_paused = false;
         console.log('playing '+this.defaults.el_audio_player.src);
@@ -120,7 +121,7 @@ let app = {
     },
     pauseAudio: function() {
         this.defaults.el_audio_player.pause();
-        this.defaults.el_play_pause_button.innerHTML = '<span class="c-shape m-play"></span>';
+        this.defaults.el_play_pause_button.innerHTML = '<span class="c-shape m-play u-anim-fade-in"></span>';
         this.defaults.el_play_pause_button.setAttribute('title', '[PLAY] soundtrack');
         window.app_audio_player_paused = true;
     },
@@ -163,10 +164,26 @@ let app = {
             this.defaults.el_fullscreen.setAttribute('title', 'Exit fullscreen');
         }
     },
+    effectClick: function(e) {
+        // <div id="app_effect_click" class="c-position m-fixed m-anchor-middle-center c-shape m-play u-transparent"></div>
+        const el_effect_click = document.createElement('div');
+        el_effect_click.classList.add('c-position', 'm-fixed', 'm-anchor-middle-center', 'c-shape', 'm-play', 'u-transparent', 'u-z-100');
+        document.body.appendChild(el_effect_click);
+        el_effect_click.style.top = e.clientY+'px';
+        el_effect_click.style.left = e.clientX+'px';
+        if (!el_effect_click.classList.contains('u-anim-click')) {
+            el_effect_click.classList.remove('u-transparent');
+            el_effect_click.classList.add('u-anim-click');
+            setTimeout(function() {
+                el_effect_click.remove();
+            }, 2200);
+        }
+    },
     update: function() {
         window.app_audio_player_paused = true;
         window.addEventListener('load', function() {
             document.body.style.opacity = 1;
+            document.body.addEventListener('click', app.effectClick, { passive: true });
         });
         if (this.defaults.el_nav_home !== null && this.defaults.el_loader !== null && this.defaults.el_scenes !== null) {
             this.defaults.el_nav_home.addEventListener('click', function(e) {

@@ -81,6 +81,26 @@ hr {
     }
 }
 
+@keyframes click {
+    from {
+        opacity: 1;
+        font-size: 0em;
+    }
+    to {
+        opacity: 0;
+        font-size: 15em;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);

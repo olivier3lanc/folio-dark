@@ -466,6 +466,8 @@ $briks-utilities: (
             left-to-right: 3s linear 0s infinite alternate left_to_right,
             bottom-to-top: 4s linear 0s infinite alternate bottom_to_top,
             bottom-to-top-transform: 1s ease-in-out 0s infinite alternate bottom_to_top_transform,
+            fade-in: 0.7s ease-in-out 0s 1 fade,
+            click: 2s ease-in-out 0s 1 forwards click
         ),
         additional-names-and-values: (),
         responsive: false
@@ -1193,6 +1195,7 @@ $briks-components-generic: (
             font-family: my-font-family(lead-alt),
             font-size: my-font-size(sm),
             text-transform: uppercase,
+            // animation: 2s ease-in-out 0s 1 fade
         ),
         modifiers: (
             'transparent': (
