@@ -52,76 +52,76 @@ const story = {
             layout: 'second'
         },
         'grottes-a': {
-            layout: 'first'
+            layout: 'third'
         },
         'grottes-c': {
-            layout: 'first'
+            layout: 'third'
         },
         'particles-a': {
-            layout: 'first'
+            layout: 'third'
         },
         'particles-b': {
-            layout: 'first'
+            layout: 'third'
         },
         'particles-c': {
-            layout: 'first'
+            layout: 'third'
         },
         'particles-d': {
-            layout: 'first'
+            layout: 'third'
         },
         'particles-e': {
-            layout: 'first'
+            layout: 'third'
         },
         'machine-b': {
-            layout: 'first'
+            layout: 'third'
         },
         'machine-c': {
-            layout: 'first'
+            layout: 'third'
         },
         'foret-noa': {
-            layout: 'first'
+            layout: 'third'
         },
         'route-a': {
-            layout: 'first'
+            layout: 'third'
         },
         'route-c': {
-            layout: 'first'
+            layout: 'third'
         },
         'blast': {
-            layout: 'first'
+            layout: 'third'
         },
         'claudia-futur-b': {
-            layout: 'first'
+            layout: 'third'
         },
         'adam-a': {
-            layout: 'first'
+            layout: 'third'
         },
         'st-christophe-c': {
-            layout: 'first'
+            layout: 'third'
         },
         'matter-c': {
-            layout: 'first'
+            layout: 'third'
         },
         'matter-e': {
-            layout: 'first'
+            layout: 'third'
         },
         'matter-f': {
-            layout: 'first'
+            layout: 'third'
         },
         'matter-l': {
-            layout: 'first'
+            layout: 'third'
         },
         'matter-g': {
-            layout: 'first'
+            layout: 'third'
         },
         'matter-j': {
-            layout: 'first'
+            layout: 'third'
         },
         'wormhole-a': {
-            layout: 'first'
+            layout: 'third'
         },
         'wormhole-c': {
-            layout: 'first'
+            layout: 'third'
         },
         'jonas-teen': {
             layout: 'third',
@@ -536,7 +536,7 @@ const story = {
     layouts: {
         first: function(data) {
             let markup = story.includes.scroll_frames('json/'+data.scene_current_id+'.json');
-            markup += story.includes.dark_split_text(data.scene_data);
+            markup += story.includes.dark_split_text_scroll(data.scene_data);
             markup += story.includes.navigation_alt(data.scene_current_id);
             markup += story.includes.onboarding_scroll();
             return markup;
@@ -551,38 +551,31 @@ const story = {
         third: function(data) {
             let markup = story.includes.css_video_frames(data.scene_current_id);
             markup += story.includes.dark_split_text(data.scene_data);
-            markup += story.includes.navigation_alt(data.scene_current_id);
-            markup += story.includes.onboarding_scroll();
-            return markup;
-        },
-        fourth: function(data) {
-            let markup = story.includes.css_video_frames(data.scene_current_id);
-            markup += story.includes.dark_title();
-            markup += story.includes.navigation_alt(data.scene_current_id);
-            markup += story.includes.onboarding_scroll();
+            markup += story.includes.navigation(data.scene_current_id);
+            markup += story.includes.onboarding();
             return markup;
         }
     },
     includes: {
         navigation: function(current_scene_id) {
             return `
-            <nav class="c-position m-fixed m-bottom-xxl m-left-0 c-grid m-center m-nowrap u-w-100" role="navigation">
-                <a href="scene.html?scene=${story.getPreviousSceneId(current_scene_id)}" id="app_prev_scene" class="c-btn m-thin m-transparent c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Previous scene">
-                    <span><span class="c-shape m-chevron-left"></span></span>
-                </a>
-                <a href="scene.html?scene=${story.getNextSceneId(current_scene_id)}" id="app_next_scene" class="c-btn m-thin c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Next scene">
-                    <span><span class="c-shape m-chevron-right"></span></span>
-                </a>
-            </nav>
+                <nav class="c-position m-fixed m-bottom-md m-left-0 c-grid m-center m-nowrap u-w-100" m-bottom-25="sm" role="navigation">
+                    <a href="scene.html?scene=${story.getPreviousSceneId(current_scene_id)}" class="c-btn m-thin m-transparent c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Previous scene">
+                        <span><span class="c-shape m-chevron-left"></span></span>
+                    </a>
+                    <a href="scene.html?scene=${story.getNextSceneId(current_scene_id)}" class="c-btn m-thin c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Next scene">
+                        <span><span class="c-shape m-chevron-right"></span></span>
+                    </a>
+                </nav>
             `;
         },
         navigation_alt: function(current_scene_id) {
             return `
-                <nav class="c-position m-relative c-grid m-center m-nowrap u-w-100 u-bg-gradient-vertical u-pb-xxl" role="navigation">
-                    <a href="scene.html?scene=${story.getPreviousSceneId(current_scene_id)}" id="app_prev_scene" class="c-btn m-thin m-transparent c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Previous scene">
+                <nav class="c-position m-relative c-grid m-center m-nowrap u-w-100 u-bg-gradient-vertical u-pb-xxl" u-pb-lg="sm" role="navigation">
+                    <a href="scene.html?scene=${story.getPreviousSceneId(current_scene_id)}" class="c-btn m-thin m-transparent c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Previous scene">
                         <span><span class="c-shape m-chevron-left"></span></span>
                     </a>
-                    <a href="scene.html?scene=${story.getNextSceneId(current_scene_id)}" id="app_next_scene" class="c-btn m-thin c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Next scene">
+                    <a href="scene.html?scene=${story.getNextSceneId(current_scene_id)}" class="c-btn m-thin c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Next scene">
                         <span><span class="c-shape m-chevron-right"></span></span>
                     </a>
                 </nav>
@@ -590,7 +583,7 @@ const story = {
         },
         onboarding_scroll: function() {
             return `
-                <div class="c-position m-fixed m-middle-center m-anchor-top-center c-grid m-nowrap m-baseline u-ta-center u-mt-xl"
+                <div class="c-position m-fixed m-middle-center m-anchor-top-center c-grid m-nowrap m-center u-ta-center u-mt-xl"
                     scroll-btween="app_scene_onboarding_mouse"
                     scroll-btween-detector="app_scene_detector" 
                     data-opacity="|0:1 to 15:0 to 100:0|"
@@ -601,6 +594,16 @@ const story = {
                     </div>
                     <div class="c-spacing m-w-6 u-p-xxs u-orient-portrait" u-none="md,xl">
                         <span class="c-shape m-orientation-landscape u-fs-xl" u-fs-lg="sm"></span> 
+                        <p class="u-fs-xs u-m-none u-ff-lead u-c-primary-max u-lh-1">Landscape orientation recommended</p>
+                    </div>
+                </div>
+            `
+        },
+        onboarding: function() {
+            return `
+                <div class="c-position m-fixed m-middle-center m-anchor-top-center u-ta-center u-mt-xl" u-mt-md="sm">
+                    <div class="u-p-xxs u-orient-portrait" u-none="md,xl">
+                        <span class="c-shape m-orientation-landscape u-fs-xl" u-fs-lg="sm"></span><br>
                         <p class="u-fs-xs u-m-none u-ff-lead u-c-primary-max u-lh-1">Landscape orientation recommended</p>
                     </div>
                 </div>
@@ -650,7 +653,7 @@ const story = {
                 </h1>
             `
         },
-        dark_split_text: function(data) {
+        dark_split_text_scroll: function(data) {
             let random_quote = story.getRandomQuote();
             if (typeof data == 'object') {
                 if (data.first !== undefined) {
@@ -678,6 +681,26 @@ const story = {
                 </h1>
             `
         },
+        dark_split_text: function(data) {
+            let random_quote = story.getRandomQuote();
+            if (typeof data == 'object') {
+                if (data.first !== undefined) {
+                    random_quote.first = data.first;
+                }
+                if (data.second !== undefined) {
+                    random_quote.second = data.second;
+                }
+            }
+            return `
+                <h1 id="app_dark_text_split"
+                    class="c-spacing m-w-10 c-position m-fixed m-middle-center m-anchor-middle-center u-m-none u-ff-lead-alt u-fw-100 u-fs-md u-tt-uppercase u-ta-center u-lh-smooth u-lsp-xlarge"
+                    u-fs-xs="sm"
+                    u-fs-sm="md">
+                    <span class="u-c-primary-max u-ml-xxs u-mr-xxs u-ws-nowrap">${random_quote.first}</span> 
+                    <span class="u-c-primary u-mr-xxs u-ml-xxs u-ws-nowrap">${random_quote.second}</span>
+                </h1>
+            `
+        },
         css_video_frames: function(id) {
             return `
                 <link rel="stylesheet" href="css/${id}.css">
@@ -685,9 +708,6 @@ const story = {
                     <div id="${id}" class="u-minh-100vh u-minw-100vw"></div>
                 </div>
                 <div class="c-position m-fixed m-top-0 u-w-100 u-h-100vh u-bc-primary-rev u-pe-none u-faded u-bg-stripes"></div>
-                <div id="app_screen_height" class="u-h-100vh"></div>
-                <div id="app_scene_detector"></div>
-                <div id="app_screen_height" class="u-h-100vh"></div>
             `
         }
     },
@@ -702,18 +722,20 @@ const story = {
                 scene_data: story.scenes[scene_current_id].data
             };
             if (typeof scene == 'object') {
-                console.log(scene);
                 const markup = this.layouts[scene.scene_layout](scene);
-                // console.log(markup);
                 this.elements.main.innerHTML = markup;
             }
         }
         if (this.elements.loader !== null) {
             window.addEventListener('load', function() {
                 story.elements.loader.classList.add('u-transparent');
+                // Remove all click effect nodes
+                window.parent.document.querySelectorAll('.effect-click').forEach(function(el) {
+                    el.remove();
+                });
             });
         }
-        document.querySelectorAll('#app_next_scene, #app_prev_scene').forEach(function(el) {
+        document.querySelectorAll('a[href^="scene.html"]').forEach(function(el) {
             el.addEventListener('click', function(e) {
                 e.preventDefault();
                 story.elements.loader.classList.remove('u-transparent');

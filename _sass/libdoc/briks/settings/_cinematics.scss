@@ -467,7 +467,7 @@ $briks-utilities: (
             bottom-to-top: 4s linear 0s infinite alternate bottom_to_top,
             bottom-to-top-transform: 1s ease-in-out 0s infinite alternate bottom_to_top_transform,
             fade-in: 0.7s ease-in-out 0s 1 fade,
-            click: 2s ease-in-out 0s 1 forwards click
+            click: 0.7s ease-out 0s 1 forwards click
         ),
         additional-names-and-values: (),
         responsive: false
@@ -1015,6 +1015,12 @@ $briks-components-generic: (
             display: inline-block
         ),
         modifiers: (
+            dot: (
+                width: 1em,
+                height: 1em,
+                border-radius: my-border-radius(max),
+                background-color: my-color(primary-max)
+            ),
             mouse: (
                 width: 0.67em,
                 height: 1em,
@@ -1365,8 +1371,14 @@ $briks-components-generic: (
             top-0: (
                 top: 0%
             ),
+            top-25: (
+                top: 25%
+            ),
             top-50: (
                 top: 50%
+            ),
+            top-75: (
+                top: 75%
             ),
             top-100: (
                 top: 100%
@@ -1374,8 +1386,14 @@ $briks-components-generic: (
             right-0: (
                 right: 0%
             ),
+            right-25: (
+                right: 25%
+            ),
             right-50: (
                 right: 50%
+            ),
+            right-75: (
+                right: 75%
             ),
             right-100: (
                 right: 100%
@@ -1383,8 +1401,14 @@ $briks-components-generic: (
             bottom-0: (
                 bottom: 0%
             ),
+            bottom-25: (
+                bottom: 25%
+            ),
             bottom-50: (
                 bottom: 50%
+            ),
+            bottom-75: (
+                bottom: 75%
             ),
             bottom-100: (
                 bottom: 100%
@@ -1392,8 +1416,14 @@ $briks-components-generic: (
             left-0: (
                 left: 0%
             ),
+            left-25: (
+                left: 25%
+            ),
             left-50: (
                 left: 50%
+            ),
+            left-75: (
+                left: 75%
             ),
             left-100: (
                 left: 100%

@@ -8,7 +8,7 @@ permalink: index.html # To avoid: Warning: Empty `slug` generated for '/'.
 <main class="u-h-100vh">
     <iframe src="scene.html?scene=opening-credits-a" id="app_scenes" class="c-position m-fixed m-top-0 u-w-100 u-h-100vh u-brep-no-repeat u-bpos-center u-m-none u-p-none u-b-none"></iframe>
     <div id="app_loader" class="c-position m-fixed m-top-0 c-grid m-middle m-center u-w-100 u-h-100vh u-transition-opacity u-bc-primary-rev u-pe-none">
-        <div class="c-spacing m-maxw-300 m-w-12 c-ar m-square u-bg-sic-mundus u-anim-rotate" m-w-3="sm"></div>
+        <div class="c-spacing m-w-1 c-ar m-square u-bg-sic-mundus u-anim-rotate"></div>
     </div>
 </main>
 
@@ -19,13 +19,15 @@ permalink: index.html # To avoid: Warning: Empty `slug` generated for '/'.
         onclick="app.playPauseAudio()">
         <span class="c-shape m-play"></span>
     </button>
-    <div id="app_audio_consent_modal" class="c-grid m-middle">
+    <div class="c-grid m-middle">
         <p class="c-spacing m-w-12 u-m-none u-fs-xs u-ff-lead u-lh-1" u-fs-xs="sm">
             <span id="app_audio_artist">Best experience with</span><br>
-            <span id="app_audio_title">the original soundtrack</span>
+            <span id="app_audio_title">the original soundtrack</span><br>
+            <button id="app_audio_previous" class="c-btn m-transparent u-p-none u-pe-auto u-fs-xxs u-mr-xs u-none u-faded" onclick="app.seekAudio('previous')">Previous</button>
+            <button id="app_audio_next" class="c-btn m-transparent u-p-none u-pe-auto u-fs-xxs u-none" onclick="app.seekAudio('next')">Next</button>
         </p>
     </div>
-    <audio id="app_audio_player" class="u-pe-auto" src="audio/apparat-goodbye.mp3" type="audio/mp3" onended="app.nextAudio()"></audio>
+    <audio id="app_audio_player" class="u-pe-auto" src="audio/apparat-goodbye.mp3" type="audio/mp3" onended="app.seekAudio('next')"></audio>
     <noscript>
         <audio class="u-pe-auto" src="audio/apparat-goodbye.mp3" type="audio/mp3" controls></audio>
     </noscript>
@@ -50,6 +52,6 @@ permalink: index.html # To avoid: Warning: Empty `slug` generated for '/'.
         <span class="c-position m-absolute m-top-0 m-right-0 u-bb-thin-solid-primary u-bl-thin-solid-primary u-w-smallbar u-h-smallbar"></span>
     </span>
 </button>
-
+<!-- <div id="app_effect_click" class="c-position m-fixed c-shape m-dot u-z-100 u-fs-xxl u-transparent"></div> -->
 
 

@@ -2,30 +2,18 @@ let app = {
     defaults: {
         el_audio_player: document.getElementById('app_audio_player'),
         el_play_pause_button: document.getElementById('app_play_pause'),
+        el_audio_previous_button: document.getElementById('app_audio_previous'),
+        el_audio_next_button: document.getElementById('app_audio_next'),
         el_audio_artist: document.getElementById('app_audio_artist'),
         el_audio_title: document.getElementById('app_audio_title'),
-        el_nav_home: document.getElementById('app_nav_home'),
         el_loader: document.getElementById('app_loader'),
         el_scenes: document.getElementById('app_scenes'),
-        el_audio_consent_modal: document.getElementById('app_audio_consent_modal'),
         el_icon_fs_enter: document.getElementById('app_icon_fs_enter'),
         el_icon_fs_exit: document.getElementById('app_icon_fs_exit'),
         el_fullscreen: document.getElementById('app_fullscreen'),
         el_effect_click: document.getElementById('app_effect_click'),
         isFullscreen: false,
         songs: {
-            // Agnes Obel - Familiar (Lyric video) • DARK - S1 Soundtrack.mp4
-            // Apparat - Goodbye - Dark (Netflix) Theme Song.mp4
-            // Bloc Party - The Pioneers (M83 Remix).mp4
-            // Chris Avantgarde feat. Red Rosamond - Inside - Dark Season 3 Soundtrack.mp4
-            // Hozier - In The Woods Somewhere - Dark Season 3 Soundtrack.mp4
-            // May and Robot Koch - Bad Kingdom (Dark Season 3).mp4
-            // Peter Gabriel - My Body Is A Cage - Dark- Season 2 OST.mp4
-            // Raury - God's Whisper (Lyric video) • DARK - S2 Soundtrack.mp4
-            // RY X - Thunder (Lyric video) • DARK - S2 Soundtrack.mp4
-            // Teho Teardo & Blixa Bargeld - A Quiet Life (Lyric video) • DARK - S1 Soundtrack.mp4
-            // Bloc Party - The Pioneers (M83 Remix).mp4
-            // Apparat - Goodbye - Dark (Netflix) Theme Song.pkf
             'audio/apparat-goodbye.mp3': {
                 artist: 'Apparat',
                 title: 'Goodbye'
@@ -34,25 +22,33 @@ let app = {
                 artist: 'Teho Teardo & Blixa Bargeld',
                 title: 'A Quiet Life'
             },
+            'audio/fever-ray-keep-the-streets-empty-for-me.mp3': {
+                artist: 'Fever Ray',
+                title: 'Keep the Streets Empty for Me'
+            },
+            'audio/apparat-joel.mp3': {
+                artist: 'Apparat',
+                title: 'Joel'
+            },
             'audio/agnes-obel-familiar.mp3': {
                 artist: 'Agnes Obel',
                 title: 'Familiar'
-            },
-            'audio/bloc-party-the-pioneers-m83-remix.mp3': {
-                artist: 'Bloc Party',
-                title: 'The Pioneers (M83 Remix)'
             },
             'audio/chris-avantgarde-feat-red-rosamond-inside.mp3': {
                 artist: 'Chris Avantgarde feat. Red Rosamond',
                 title: 'Inside'
             },
+            'audio/may-the-muse-bad-kingdom.mp3': {
+                artist: 'May The Muse and Robot Koch',
+                title: 'Bad Kingdom'
+            },
             'audio/hozier-in-the-woods-somewhere.mp3': {
                 artist: 'Hozier',
                 title: 'In The Woods Somewhere'
             },
-            'audio/may-the-muse-bad-kingdom.mp3': {
-                artist: 'May The Muse and Robot Koch',
-                title: 'Bad Kingdom'
+            'audio/bloc-party-the-pioneers-m83-remix.mp3': {
+                artist: 'Bloc Party',
+                title: 'The Pioneers (M83 Remix)'
             },
             'audio/peter-gabriel-my-body-is-a-cage.mp3': {
                 artist: 'Peter Gabriel',
@@ -68,39 +64,44 @@ let app = {
             }
         } 
     },
-    audioConsentModal: function(cmd) {
-        if (this.defaults.el_audio_consent_modal !== null) {
-            if (typeof cmd == 'string') {
-                if (cmd == 'close') {
-                    this.defaults.el_audio_consent_modal.classList.add('u-none');
-                }
-                if (cmd == 'open') {
-                    this.defaults.el_audio_consent_modal.classList.remove('u-none');
-                }
+    seekAudio: function(cmd) {
+        if (cmd == 'next' || cmd == 'previous') {
+            // Get current
+            const current_song_path = app.defaults.el_audio_player.getAttribute('src');
+            const songs_paths = Object.keys(app.defaults.songs);
+            const current_index = songs_paths.indexOf(current_song_path);
+            let index_offset = 0;
+            if (cmd == 'next') {
+                index_offset = 1;
             }
-        }
-    },
-    nextAudio: function() {
-        // Pause
-        this.pauseAudio();
-        // Get current
-        const current_song = app.defaults.el_audio_player.getAttribute('src');
-        const songs_paths = Object.keys(app.defaults.songs);
-        const last_song = songs_paths[songs_paths.length - 1];
-        console.log('last song : '+last_song);
-        if (current_song != last_song) {
-            const current_index = songs_paths.indexOf(current_song);
-            const next_index = current_index + 1;
-            const next_song = songs_paths[next_index];
-            console.log(current_index,next_song);
-            app.defaults.el_audio_player.setAttribute('src', next_song);
-            app.defaults.el_audio_player.load();
-            this.playAudio();
-        } else {
-            const first_song = songs_paths[0];
-            app.defaults.el_audio_player.setAttribute('src', first_song);
-            app.defaults.el_audio_player.load();
-            console.log('reset');
+            if (cmd == 'previous') {
+                index_offset = -1;
+            }
+            const new_index = current_index + index_offset;
+            if (new_index >= 0 && new_index <= songs_paths.length - 1) {
+                // Pause
+                this.pauseAudio();
+                const new_song_path = songs_paths[new_index];
+                // Replace file
+                app.defaults.el_audio_player.setAttribute('src', new_song_path);
+                // Load file
+                app.defaults.el_audio_player.load();
+                // Play
+                this.playAudio();
+                // Seek commands
+                this.defaults.el_audio_previous_button.classList.add('u-pe-auto');
+                this.defaults.el_audio_previous_button.classList.remove('u-faded');
+                this.defaults.el_audio_next_button.classList.add('u-pe-auto');
+                this.defaults.el_audio_next_button.classList.remove('u-faded');
+            }
+            if (new_index <= 0) {
+                this.defaults.el_audio_previous_button.classList.add('u-faded');
+                this.defaults.el_audio_previous_button.classList.remove('u-pe-auto');
+            }
+            if (new_index >= songs_paths.length - 1) {
+                this.defaults.el_audio_next_button.classList.add('u-faded');
+                this.defaults.el_audio_next_button.classList.remove('u-pe-auto');
+            }
         }
     },
     showAudioInfo: function() {
@@ -116,8 +117,10 @@ let app = {
         this.defaults.el_play_pause_button.innerHTML = '<span class="c-shape m-pause u-anim-fade-in"></span>';
         this.defaults.el_play_pause_button.setAttribute('title', '[PAUSE] soundtrack');
         window.app_audio_player_paused = false;
-        console.log('playing '+this.defaults.el_audio_player.src);
+        // console.log('playing '+this.defaults.el_audio_player.src);
         this.showAudioInfo();
+        this.defaults.el_audio_next_button.classList.remove('u-none');
+        this.defaults.el_audio_previous_button.classList.remove('u-none');
     },
     pauseAudio: function() {
         this.defaults.el_audio_player.pause();
@@ -165,38 +168,24 @@ let app = {
         }
     },
     effectClick: function(e) {
-        // <div id="app_effect_click" class="c-position m-fixed m-anchor-middle-center c-shape m-play u-transparent"></div>
-        const el_effect_click = document.createElement('div');
-        el_effect_click.classList.add('c-position', 'm-fixed', 'm-anchor-middle-center', 'c-shape', 'm-play', 'u-transparent', 'u-z-100');
-        document.body.appendChild(el_effect_click);
+        const el_effect_click = window.parent.document.createElement('div');
+        el_effect_click.classList.add('c-position', 'm-fixed', 'c-shape', 'm-dot', 'u-transparent', 'u-fs-xl', 'u-pe-none', 'effect-click');
         el_effect_click.style.top = e.clientY+'px';
         el_effect_click.style.left = e.clientX+'px';
-        if (!el_effect_click.classList.contains('u-anim-click')) {
-            el_effect_click.classList.remove('u-transparent');
-            el_effect_click.classList.add('u-anim-click');
-            setTimeout(function() {
-                el_effect_click.remove();
-            }, 2200);
-        }
+        el_effect_click.classList.remove('u-transparent');
+        el_effect_click.classList.add('u-anim-click');
+        setTimeout(function() {
+            el_effect_click.remove();
+        }, 1000);
+        window.parent.document.body.appendChild(el_effect_click);
+    },
+    runOnceWindowLoaded: function() {
+        document.body.style.opacity = 1;
+        document.body.addEventListener('click', app.effectClick, {passive: true});
     },
     update: function() {
         window.app_audio_player_paused = true;
-        window.addEventListener('load', function() {
-            document.body.style.opacity = 1;
-            document.body.addEventListener('click', app.effectClick, { passive: true });
-        });
-        if (this.defaults.el_nav_home !== null && this.defaults.el_loader !== null && this.defaults.el_scenes !== null) {
-            this.defaults.el_nav_home.addEventListener('click', function(e) {
-                e.preventDefault();
-                let scene_url = e.target.dataset.href || e.target.closest('a').dataset.href;
-                if (scene_url !== undefined) {
-                    app.defaults.el_loader.classList.remove('u-transparent');
-                    setTimeout(function() {
-                        app.defaults.el_scenes.setAttribute('src', scene_url);
-                    }, 500);
-                }
-            })
-        }
+        window.addEventListener('load', app.runOnceWindowLoaded);
     }
 }
 app.update();

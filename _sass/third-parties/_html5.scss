@@ -84,11 +84,11 @@ hr {
 @keyframes click {
     from {
         opacity: 1;
-        font-size: 0em;
+        transform: translateX(-50%) translateY(-50%) scale(0.3);
     }
     to {
         opacity: 0;
-        font-size: 15em;
+        transform: translateX(-50%) translateY(-50%) scale(1);
     }
 }
 
