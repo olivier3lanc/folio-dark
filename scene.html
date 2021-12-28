@@ -4,11 +4,33 @@ description: Web cinematics inspired from the TV serie DARK
 layout: libdoc/playground
 ---
 <main></main>
-<nav class="c-position m-fixed m-top-left c-grid m-nowrap m-middle u-c-primary u-pl-sm">
-    <a href="scene.html?scene=opening-credits-a" class="c-btn m-transparent u-p-md u-fs-xxs u-lsp-xlarge" u-p-sm="sm">Opening</a>
-    <a href="scene.html?scene=grottes-a" class="c-btn m-transparent u-p-md u-fs-xxs u-lsp-xlarge" u-p-sm="sm">Extracts</a>
-    <a href="scene.html?scene=jonas-teen" class="c-btn m-transparent u-p-md u-fs-xxs u-lsp-xlarge" u-p-sm="sm">Characters</a>
-    <a href="#" class="c-btn m-transparent u-p-md u-fs-xxs u-lsp-xlarge" u-p-sm="sm">About</a>
-    <div class="c-position m-absolute m-bottom-left u-bb-thin-solid-primary u-w-100"></div>
+<nav class="c-position m-fixed m-top-0 m-left-xl c-grid u-w-60vw" m-left-lg="sm">
+    <a  href="scene.html?scene=opening-credits-a" class="c-btn m-transparent c-position m-anchor-top-center c-effect m-span-180-core m-span-180-rotate u-p-md u-fs-xxs u-lsp-xlarge" 
+        u-fs-xxxs="sm" 
+        u-p-sm="sm">
+        <i style="width: 10px;height: 10px;" class="c-position m-absolute m-top-100 m-left-50 m-anchor-middle-center u-bc-primary u-brad-max"></i>
+        <span>Opening</span>
+    </a>
+    <a  href="scene.html?scene=grottes-a" class="c-btn m-transparent c-position m-absolute m-left-33 m-anchor-top-center c-effect m-span-180-core m-span-180-rotate u-p-md u-fs-xxs u-lsp-xlarge" 
+        u-fs-xxxs="sm" 
+        u-p-sm="sm">
+        <i style="width: 10px;height: 10px;" class="c-position m-absolute m-top-100 m-left-50 m-anchor-middle-center u-bc-primary u-brad-max"></i>
+        <span>Extracts</span>
+    </a>
+    <a  href="scene.html?scene=jonas-teen" class="c-btn m-transparent c-position m-absolute m-left-66 m-anchor-top-center c-effect m-span-180-core m-span-180-rotate u-p-md u-fs-xxs u-lsp-xlarge" 
+        u-fs-xxxs="sm" 
+        u-p-sm="sm">
+        <i style="width: 10px;height: 10px;" class="c-position m-absolute m-top-100 m-left-50 m-anchor-middle-center u-bc-primary u-brad-max"></i>
+        <span>Characters</span>
+    </a>
+    <a  href="scene.html?scene=about" class="c-btn m-transparent c-position m-absolute m-left-100 m-anchor-top-center c-effect m-span-180-core m-span-180-rotate u-p-md u-fs-xxs u-lsp-xlarge" 
+        u-fs-xxxs="sm" 
+        u-p-sm="sm">
+        <i style="width: 10px;height: 10px;" class="c-position m-absolute m-top-100 m-left-50 m-anchor-middle-center u-bc-primary u-brad-max"></i>
+        <span>About</span>
+    </a>
+    <div class="c-spacing m-w-12 c-position m-absolute m-bottom-0 m-left-0 u-bb-thin-solid-primary-max u-faded"></div>
+    <div class="c-spacing m-w-12 c-position m-absolute m-bottom-0 m-right-100 u-bb-thin-solid-primary"></div>
+    <div id="app_progress" class="c-position m-absolute m-bottom-0 m-left-0 u-bb-thin-solid-primary" style="width:0%"></div>
 </nav>
 <script src="{{ 'js/story.js' | absolute_url }}"></script>

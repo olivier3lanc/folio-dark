@@ -451,6 +451,9 @@ const story = {
                 first: 'Noah',
                 second: 'Mark Waschke'
             }
+        },
+        'about': {
+            layout: 'fourth'
         }
     },
     quotes: [{
@@ -531,7 +534,8 @@ const story = {
     },
     elements: {
         loader: window.parent.document.querySelector('#app_loader'),
-        main: document.querySelector('main')
+        main: document.querySelector('main'),
+        progress: document.getElementById('app_progress')
     },
     layouts: {
         first: function(data) {
@@ -553,6 +557,11 @@ const story = {
             markup += story.includes.dark_split_text(data.scene_data);
             markup += story.includes.navigation(data.scene_current_id);
             markup += story.includes.onboarding();
+            return markup;
+        },
+        fourth: function(data) {
+            let markup = story.includes.css_video_frames('matter-j');
+            markup += story.includes.about(data.scene_data);
             return markup;
         }
     },
@@ -709,12 +718,143 @@ const story = {
                 </div>
                 <div class="c-position m-fixed m-top-0 u-w-100 u-h-100vh u-bc-primary-rev u-pe-none u-faded u-bg-stripes"></div>
             `
+        },
+        about: function(data) {
+            return `
+                <ul class="c-grid c-position m-relative c-spacing m-maxw-600 u-ls-none u-pl-none u-m-auto u-mt-xxl u-mb-xxl u-pt-xxl u-c-primary-max" 
+                    u-pl-md="sm" 
+                    u-pr-md="sm"
+                    u-mt-none="sm">
+                    <li class="c-spacing m-w-12 c-grid m-space-between m-nowrap u-mb-md">
+                        <span class="u-pr-md">Author of this demo</span> 
+                        <span class="u-ta-right"><a href="https://github.com/olivier3lanc" target="_blank">Olivier 3lanc</a></span>
+                    </li>
+                    <li class="c-spacing m-w-12 u-mb-md">
+                        <h2 class="u-ff-lead u-fw-100 u-fs-xxs u-c-primary u-tt-uppercase u-lsp-xlarge u-m-none">Songs</h2>
+                        <ul class="c-spacing m-w-12 u-ls-none u-pl-none u-m-none">
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">Apparat</span> 
+                                <span class="u-ta-right"><a href="https://www.apparat.net" target="_blank">Goodbye</a></span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">Apparat</span> 
+                                <span class="u-ta-right"><a href="https://www.apparat.net" target="_blank">Joel</a></span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">Teho Teardo & Blixa Bargeld</span> 
+                                <span class="u-ta-right"><a href="http://www.tehoteardo.com/en/opera/album/teho-teardo-blixa-bargeld/" target="_blank">A Quiet Life</a></span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">Fever Ray</span> 
+                                <span class="u-ta-right"><a href="https://feverray.com/" target="_blank">Keep the Streets Empty for Me</a></span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">Agnes Obel</span> 
+                                <span class="u-ta-right"><a href="https://www.agnesobel.com/" target="_blank">Familiar</a></span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">Chris Avantgarde feat. Red Rosamond</span> 
+                                <span class="u-ta-right"><a href="https://soundcloud.com/chrisavantgarde/chris-avantgarde-feat-red-rosamond-inside" target="_blank">Inside</a></span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">May The Muse and Robot Koch</span> 
+                                <span class="u-ta-right"><a href="https://www.youtube.com/watch?v=FMemllFAw2o" target="_blank">Bad Kingdom</a></span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">Hozier</span> 
+                                <span class="u-ta-right"><a href="https://www.youtube.com/watch?v=XlfCfEfbO48" target="_blank">In The Woods Somewhere</a></span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">Bloc Party</span> 
+                                <span class="u-ta-right"><a href="https://www.youtube.com/watch?v=K-esZZBKp1c" target="_blank">The Pioneers (M83 Remix)</a></span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">Peter Gabriel</span> 
+                                <span class="u-ta-right"><a href="https://www.youtube.com/watch?v=PkNtBuwWq_o" target="_blank">My Body Is A Cage</a></span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">Raury</span> 
+                                <span class="u-ta-right"><a href="https://www.youtube.com/watch?v=Bh1XRH4HrOY" target="_blank">God's Whisper</a></span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">RY X</span> 
+                                <span class="u-ta-right"><a href="https://www.youtube.com/watch?v=Nx-bsD8DgZM" target="_blank">Thunder</a></span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="c-spacing m-w-12 u-mb-md">
+                        <h2 class="u-ff-lead u-fw-100 u-fs-xxs u-c-primary u-tt-uppercase u-lsp-xlarge u-m-none">Fonts</h2>
+                        <ul class="c-spacing m-w-12 u-ls-none u-pl-none u-m-none">
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md u-ff-lead-alt u-fw-100">Gotham Light</span> 
+                                <span class="u-ta-right"><a href="https://www.typography.com/fonts/gotham/styles" target="_blank">View</a></span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md u-ff-lead u-fw-100">Gill Sans Nova Light</span> 
+                                <span class="u-ta-right"><a href="https://www.linotype.com/fr/1603102/gill-sans-nova-light-product.html" target="_blank">View</a></span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="c-spacing m-w-12 u-mb-md">
+                        <h2 class="u-ff-lead u-fw-100 u-fs-xxs u-c-primary u-tt-uppercase u-lsp-xlarge u-m-none">Javascript</h2>
+                        <ul class="c-spacing m-w-12 u-ls-none u-pl-none u-m-none">
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">Ola.js</span> 
+                                <span class="u-ta-right"><a href="https://github.com/franciscop/ola" target="_blank">Website</a></span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">ScrollBtween.js</span> 
+                                <span class="u-ta-right"><a href="https://github.com/olivier3lanc/Scroll-Btween" target="_blank">Website</a></span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">ScrollFrames.js</span> 
+                                <span class="u-ta-right"><a href="https://github.com/olivier3lanc/Scroll-Frames" target="_blank">Website</a></span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="c-spacing m-w-12 u-mb-md">
+                        <h2 class="u-ff-lead u-fw-100 u-fs-xxs u-c-primary u-tt-uppercase u-lsp-xlarge u-m-none">Stylesheets</h2>
+                        <ul class="c-spacing m-w-12 u-ls-none u-pl-none u-m-none">
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">BRIKS</span> 
+                                <span class="u-ta-right">Personal framework</span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">CSS video frames</span> 
+                                <span class="u-ta-right">Personal framework</span>
+                            </li>
+                            <li class="c-grid m-space-between m-nowrap">
+                                <span class="u-pr-md">Normalize.css</span> 
+                                <span class="u-ta-right"><a href="https://necolas.github.io/normalize.css/" target="_blank">Website</a></span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="c-spacing m-w-12 u-mb-md">
+                        <h2 class="u-ff-lead u-fw-100 u-fs-xxs u-c-primary u-tt-uppercase u-lsp-xlarge u-m-none">Making of</h2>
+                        <ol class="c-spacing m-w-12 u-m-none">
+                            <li>
+                                All embedded texts were removed from frames - using masks and timeline - and extracted with high quality in
+                                <a href="https://www.adobe.com/fr/products/photoshop.html" target="_blank">Adobe Photoshop</a>
+                            </li>
+                            <li>
+                                All series of frames were highly compressed in
+                                <a href="https://en.wikipedia.org/wiki/WebP" target="_blank">webp format</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <div class="c-position m-fixed m-bottom-0 m-left-0 u-w-100 u-pt-xxl u-bg-gradient-vertical u-pe-none"></div>
+                <div class="c-position m-fixed m-top-0 m-left-0 u-w-100 u-pt-xxl u-bg-gradient-vertical-rev u-pe-none"></div>
+                <div class="c-position m-fixed m-bottom-0 m-left-0 u-w-100 u-pt-xxl u-bg-gradient-vertical u-pe-none"></div>
+                <div class="c-position m-fixed m-top-0 m-left-0 u-w-100 u-pt-xxl u-bg-gradient-vertical-rev u-pe-none"></div>
+            `
         }
     },
     update: function() {
         let gets = new URLSearchParams(location.search);
         const scene_current_id = gets.get('scene');
         console.log(scene_current_id);
+        // Build the scene content
         if (scene_current_id !== null) {
             const scene = {
                 scene_current_id: scene_current_id,
@@ -722,12 +862,40 @@ const story = {
                 scene_data: story.scenes[scene_current_id].data
             };
             if (typeof scene == 'object') {
+                // Insert HTML
                 const markup = this.layouts[scene.scene_layout](scene);
                 this.elements.main.innerHTML = markup;
+                // Progress bar
+                const scenes_ids_list = Object.keys(story.scenes);
+                const max_index = scenes_ids_list.length - 1;
+                const current_scene_index = scenes_ids_list.indexOf(scene_current_id);
+                const progress_percentage = 100 * current_scene_index / max_index;
+                // Non-linear progress
+                const position_33 = 19.54;
+                const position_66 = 47.13;
+                let progress_value = 0;
+                if (progress_percentage < position_33) {
+                    progress_value = progress_percentage * 33 / position_33;
+                }
+                if (progress_percentage >= position_33 && progress_percentage < position_66) {
+                    progress_value = 33 + (progress_percentage - position_33) * 33 / (position_66 - position_33);
+                    // 19.54 -> 33
+                    // 47.13 -> 66
+                }
+                if (progress_percentage >= position_66) {
+                    progress_value = 66 + (progress_percentage - position_66) * 66 / (100 - position_66);
+                }
+                if (progress_value > 100) {
+                    progress_value = 100;
+                }
+                story.elements.progress.style.width = progress_value+'%';
+                console.log(current_scene_index,max_index,progress_value);
             }
         }
         if (this.elements.loader !== null) {
+            // Scene loaded
             window.addEventListener('load', function() {
+                // Reveal scene once loaded
                 story.elements.loader.classList.add('u-transparent');
                 // Remove all click effect nodes
                 window.parent.document.querySelectorAll('.effect-click').forEach(function(el) {
@@ -735,6 +903,7 @@ const story = {
                 });
             });
         }
+        // Manage smooth transitions between scenes
         document.querySelectorAll('a[href^="scene.html"]').forEach(function(el) {
             el.addEventListener('click', function(e) {
                 e.preventDefault();
