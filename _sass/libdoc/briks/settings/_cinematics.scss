@@ -426,7 +426,7 @@ $briks-backgrounds: (
     // search: 'right 20px center / 16px no-repeat url(data:image/svg+xml;base64,PHN2ZwogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICB3aWR0aD0iMjQiCiAgaGVpZ2h0PSIyNCIKICB2aWV3Qm94PSIwIDAgMjQgMjQiCiAgZmlsbD0ibm9uZSIKICBzdHJva2U9ImN1cnJlbnRDb2xvciIKICBzdHJva2Utd2lkdGg9IjIiCiAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogIHN0cm9rZS1saW5lam9pbj0icm91bmQiCj4KICA8Y2lyY2xlIGN4PSIxMSIgY3k9IjExIiByPSI4IiAvPgogIDxsaW5lIHgxPSIyMSIgeTE9IjIxIiB4Mj0iMTYuNjUiIHkyPSIxNi42NSIgLz4KPC9zdmc+Cg==)',
     // loading: 'center no-repeat 'my-color(primary-edge) 'url(data:image/svg+xml;base64,PHN2ZwogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICB3aWR0aD0iMjQiCiAgaGVpZ2h0PSIyNCIKICB2aWV3Qm94PSIwIDAgMjQgMjQiCiAgZmlsbD0ibm9uZSIKICBzdHJva2U9ImN1cnJlbnRDb2xvciIKICBzdHJva2Utd2lkdGg9IjIiCiAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogIHN0cm9rZS1saW5lam9pbj0icm91bmQiCj4KICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIgLz4KICA8cG9seWxpbmUgcG9pbnRzPSIxMiA2IDEyIDEyIDE2IDE0IiAvPgo8L3N2Zz4K)',
     stripes: 'url(../img/stripe.svg)',
-    // vignetting: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%),
+    vignetting: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%),
     gradient-vertical: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%),
     gradient-vertical-rev: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%),
     sic-mundus: 'center / contain no-repeat transparent url(../img/sic-mundus.svg)',
@@ -1160,12 +1160,21 @@ $briks-components-generic: (
         responsive: false,
         defaults: (),
         modifiers: (
-            span-180-core: (
-                perspective: 2em,
+            span-180-core-x: (
+                perspective: 4em,
                 pseudo-classes: (
                     hover: (
                         selector: '>span',
                         transform: rotateX(180deg)
+                    )
+                )
+            ),
+            span-180-core-y: (
+                perspective: 4em,
+                pseudo-classes: (
+                    hover: (
+                        selector: '>span',
+                        transform: rotateY(180deg)
                     )
                 )
             ),

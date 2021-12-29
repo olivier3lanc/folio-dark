@@ -574,10 +574,10 @@ const story = {
         navigation: function(current_scene_id) {
             return `
                 <nav class="c-position m-fixed m-bottom-md m-left-0 c-grid m-center m-nowrap u-w-100" m-bottom-25="sm" role="navigation">
-                    <a href="scene.html?scene=${story.getPreviousSceneId(current_scene_id)}" class="c-btn m-thin m-transparent c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Previous scene">
+                    <a href="scene.html?scene=${story.getPreviousSceneId(current_scene_id)}" class="c-btn m-thin m-transparent c-effect m-span-180-core-x m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Previous scene">
                         <span><span class="c-shape m-chevron-left"></span></span>
                     </a>
-                    <a href="scene.html?scene=${story.getNextSceneId(current_scene_id)}" class="c-btn m-thin c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Next scene">
+                    <a href="scene.html?scene=${story.getNextSceneId(current_scene_id)}" class="c-btn m-thin c-effect m-span-180-core-x m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Next scene">
                         <span><span class="c-shape m-chevron-right"></span></span>
                     </a>
                 </nav>
@@ -586,10 +586,10 @@ const story = {
         navigation_alt: function(current_scene_id) {
             return `
                 <nav class="c-position m-relative c-grid m-center m-nowrap u-w-100 u-bg-gradient-vertical u-pb-xxl" u-pb-lg="sm" role="navigation">
-                    <a href="scene.html?scene=${story.getPreviousSceneId(current_scene_id)}" class="c-btn m-thin m-transparent c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Previous scene">
+                    <a href="scene.html?scene=${story.getPreviousSceneId(current_scene_id)}" class="c-btn m-thin m-transparent c-effect m-span-180-core-x m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Previous scene">
                         <span><span class="c-shape m-chevron-left"></span></span>
                     </a>
-                    <a href="scene.html?scene=${story.getNextSceneId(current_scene_id)}" class="c-btn m-thin c-effect m-span-180-core m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Next scene">
+                    <a href="scene.html?scene=${story.getNextSceneId(current_scene_id)}" class="c-btn m-thin c-effect m-span-180-core-x m-span-180-rotate u-lh-0 u-fs-lg" u-p-sm="sm" u-fs-md="sm" title="Next scene">
                         <span><span class="c-shape m-chevron-right"></span></span>
                     </a>
                 </nav>
