@@ -722,7 +722,7 @@ const story = {
                 <div class="c-grid c-position m-fixed m-middle-center m-anchor-middle-center">
                     <div id="${id}" class="u-minh-100vh u-minw-100vw"></div>
                 </div>
-                <div class="c-position m-fixed m-top-0 u-w-100 u-h-100vh u-bc-primary-rev u-pe-none u-faded"></div>
+                <!--<div class="c-position m-fixed m-top-0 u-w-100 u-h-100vh u-bc-primary-rev u-pe-none u-faded"></div>-->
                 <div class="c-position m-fixed m-top-0 u-w-100 u-h-100vh u-pe-none u-faded u-bg-stripes" u-none="sm"></div>
             `
         }
