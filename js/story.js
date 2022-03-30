@@ -632,7 +632,7 @@ const story = {
                         scroll-frames-detector="app_scene_detector" 
                         data-json="${jsonURL}">
                     </figure>
-                    <div class="c-position m-fixed m-top-0 u-w-100 u-h-100vh u-bc-primary-rev u-pe-none u-faded"></div>
+                    <!-- <div class="c-position m-fixed m-top-0 u-w-100 u-h-100vh u-bc-primary-rev u-pe-none u-faded"></div> -->
                     <div class="c-position m-fixed m-top-0 u-w-100 u-h-100vh u-pe-none u-faded u-bg-stripes" u-none="sm"></div>
                 </article>
                 <div id="app_scene_detector"></div>
